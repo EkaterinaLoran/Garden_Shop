@@ -1,0 +1,12 @@
+.discountBanner{
+width: 151px;
+height: 32px;
+border-radius: 6px;
+top: 6px;
+right: 16px;
+bottom: 16px;
+left: 16px;
+gap: 10px;
+background-color: #FFFFFF ;
+color: #92A134;
+}

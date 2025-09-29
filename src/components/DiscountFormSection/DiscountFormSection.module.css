@@ -1,0 +1,87 @@
+.discount_content {
+    width: 1360px;
+    height: 486px;
+    top: 1416px;
+    left: 40px;
+    border-radius: 6px;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+    gap: 24px;
+    background: linear-gradient(261.47deg, #0B710B 32.63%, #339933 98.96%),
+linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+}
+
+.h3 {
+    width: 1296px;
+    height: 70px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: Monserrat;
+    font-weight: 700px;
+    font-style: bold;
+    font-size: secondary;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+  width: 748px;
+  height: 360px;
+  padding-top: 24px;  
+  padding-left: 32px;
+  padding-right: 32px;
+} 
+.discount_form {
+    width: 516px;
+    height: 296px;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.text {
+    width: 516px;
+    height: 58px;
+    border: solid 1px;
+    border-radius: 6px;
+    gap: 16px;
+    background-color: #FFFFF1;
+}
+
+.tel {
+    width: 516px;
+    height: 58px;
+    border: solid 1px;
+    border-radius: 6px;
+    gap: 16px;
+    background-color: #FFFFF1; 
+}
+
+.email {
+    width: 516px;
+    height: 58px;
+    border: solid 1px;
+    border-radius: 6px;
+    gap: 16px;
+    background-color: #FFFFF1;
+}
+
+.discount_btn {
+    width: 516px;
+    height: 58px;
+    border: solid 1px;
+    border-radius: 6px;
+    gap: 16px;
+    background-color: #FFFFF1;
+    font-family: Monserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: normal;
+    display: flex;
+    align-items: center;
+}
