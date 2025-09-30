@@ -1,11 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import styles from './CartIcon.module.css';
-import App from "../DiscountBanner/DiscountBanner";
 
 const CartIcon = () => {
     return (
-    <FontAwesomeIcon icon={byPrefixAndName.fas['bag-shopping']} />
+        <FontAwesomeIcon icon={faShoppingBag} className={styles.cartIcon} />
     );
 };
 
-export default App;
+export default CartIcon; 

@@ -1,6 +1,12 @@
 .heartIcon{
+    position: absolute; 
     width: 48px;
     height: 48px;
     top: 40px;
-    gap: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heartIcon:hover {
+    transform: scale(1.1);
 }

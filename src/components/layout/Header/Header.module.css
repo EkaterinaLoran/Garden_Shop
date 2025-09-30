@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f8f9fa;
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  color: #333;
+  text-decoration: none;
+}
+
+.iconLink:hover {
+  background-color: #f0f0f0;
+}
+
+/* Для темной темы */
+@media (prefers-color-scheme: dark) {
+  .header {
+    background: #1a1a1a;
+    border-bottom-color: #333;
+  }
+  
+  .headerTop {
+    background: #2d2d2d;
+  }
+  
+  .iconLink {
+    color: #fff;
+  }
+  
+  .iconLink:hover {
+    background-color: #404040;
+  }
+}

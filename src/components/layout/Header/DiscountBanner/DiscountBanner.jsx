@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './DiscountBanner.module.css';
-import App from "../CartIcon/CartIcon";
+
 
 const DiscountBanner = () => {
     return (
@@ -11,4 +11,4 @@ const DiscountBanner = () => {
     );
 };
 
-export default App;
+export default DiscountBanner;
