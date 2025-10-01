@@ -1,0 +1,142 @@
+.contactSection {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+
+.contactTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #424436;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contactItem {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactSubtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #424436;
+    margin-bottom: 16px;
+}
+
+.contactText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.socialsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.workingHours {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #424436;
+    margin: 0;
+}
+
+.hours {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #92A134;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Адаптивность для мобильных
+@media (max-width: 768px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contactSection {
+        padding: 40px 20px;
+    }
+    
+    .contactTitle {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+} */

@@ -1,18 +1,46 @@
-import CategoriesSection from './CategoriesSection.jsx';
+import React from 'react';
 import styles from './CategoriesSection.module.css';
 
 const CategoriesSection = () => {
  
     return (
-        <section className="categories_section">
-            <div className="categories_content">
-                <h2>Categories</h2>
-                <button className="categories_btn">All categories</button>
-                <img className="images" src="/images/Fertilizer.png" alt="Fertilizer" />
-                <img src="/images/Protective.png" alt="Protective" />
-                <img src="/images/Planting.png" alt="Plating" />
-                <img src="/images/Tools.png" alt="Tools" />
+        
+          <section className={styles.categoriesSection}>
+            <div className={styles.categoriesHeader}>
+                <h2 className={styles.title}>Categories</h2>
+                <button className={styles.categoriesBtn}>All categories</button>
+            </div>
+            
+            <div className={styles.divider}></div>
+            
+            <div className={styles.categoriesGrid}>
+                <div className={styles.categoryItem}>
+                    <img className={styles.categoryImage} src="/images/Fertilizer.png" alt="Fertilizer" />
+                    <h3 className={styles.categoryTitle}>Fertilizer</h3>
+                    <p className={styles.categoryDescription}>Protective products and septic tanks</p>
+                </div>
+                
+                <div className={styles.categoryItem}>
+                    <img className={styles.categoryImage} src="/images/Protective.png" alt="Protective" />
+                    <h3 className={styles.categoryTitle}>Protective</h3>
+                    <p className={styles.categoryDescription}>Protective products</p>
+                </div>
+                
+                <div className={styles.categoryItem}>
+                    <img className={styles.categoryImage} src="/images/Planting.png" alt="Planting" />
+                    <h3 className={styles.categoryTitle}>Planting material</h3>
+                    <p className={styles.categoryDescription}>Tools and equipment</p>
+                </div>
+                
+                <div className={styles.categoryItem}>
+                    <img className={styles.categoryImage} src="/images/Tools.png" alt="Tools" />
+                    <h3 className={styles.categoryTitle}>Tools</h3>
+                    <p className={styles.categoryDescription}>Tools and equipment</p>
+                </div>
             </div>
         </section>
-    )
-}
+    );
+};
+
+
+export default CategoriesSection;

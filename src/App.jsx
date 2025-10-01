@@ -1,11 +1,23 @@
 import React from 'react';
 import Header from './layout/Header/Header';
+import HeroSection from './components/HeroSection/HeroSection';
+import CategoriesSection from './components/CategoriesSection/CategoriesSection';
+import DiscountFormSection from './components/DiscountFormSection/DiscountFormSection';
+import SaleProductsCard from './components/SaleProductsCard/SaleProductsCard';
+import ContactInfo from './components/ContactInfo/ContactInfo';
+import Map from './components/Map/Map';
 import './App.css';
 
 function App() {
   return (
     <>
       <Header />
+      <HeroSection></HeroSection>
+      <CategoriesSection /> 
+      <DiscountFormSection />
+      <SaleProductsCard />
+      <ContactInfo />
+      <Map />
       <main>
         <h1>Добро пожаловать в магазин!</h1>
       </main>
