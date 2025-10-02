@@ -72,6 +72,184 @@
 
 
 
+@media (min-width: 1440px) {
+  .contactSection {
+    max-width: 1400px;
+    padding: 100px 60px;
+  }
+  
+  .contactGrid {
+    max-width: 1200px;
+    gap: 70px;
+  }
+  
+  .contactTitle {
+    font-size: 52px;
+  }
+  
+  .contactItem {
+    padding: 50px 25px;
+  }
+}
+
+
+@media (max-width: 1439px) and (min-width: 1000px) {
+  .contactSection {
+    max-width: 1200px;
+    padding: 90px 50px;
+  }
+  
+  .contactGrid {
+    max-width: 1100px;
+    gap: 50px;
+  }
+  
+  .contactTitle {
+    font-size: 46px;
+  }
+  
+  .contactItem {
+    padding: 45px 20px;
+  }
+}
+
+
+@media (max-width: 999px) and (min-width: 768px) {
+  .contactSection {
+    padding: 70px 30px;
+  }
+  
+  .contactGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .contactTitle {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+  
+  .contactItem {
+    padding: 35px 20px;
+  }
+  
+  .contactSubtitle {
+    font-size: 22px;
+  }
+  
+  .contactText {
+    font-size: 17px;
+  }
+}
+
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .contactSection {
+    padding: 50px 20px;
+  }
+  
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 500px;
+  }
+  
+  .contactTitle {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+  
+  .contactItem {
+    padding: 30px 20px;
+  }
+  
+  .contactSubtitle {
+    font-size: 20px;
+  }
+  
+  .contactText {
+    font-size: 16px;
+  }
+  
+  .workingHours,
+  .hours {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 479px) and (min-width: 360px) {
+  .contactSection {
+    padding: 40px 15px;
+  }
+  
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .contactTitle {
+    font-size: 34px;
+    margin-bottom: 35px;
+  }
+  
+  .contactItem {
+    padding: 25px 15px;
+  }
+  
+  .contactSubtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .contactText {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .workingHours,
+  .hours {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 359px) {
+  .contactSection {
+    padding: 30px 10px;
+  }
+  
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .contactTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .contactItem {
+    padding: 20px 12px;
+  }
+  
+  .contactSubtitle {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .contactText {
+    font-size: 14px;
+  }
+  
+  .workingHours,
+  .hours {
+    font-size: 13px;
+  }
+}
+
+
+
 
 
 

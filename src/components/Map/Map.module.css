@@ -51,6 +51,122 @@
 
 
 
+@media (min-width: 1440px) {
+  .mapSection {
+    max-width: 1400px;
+    padding: 60px 40px;
+  }
+  
+  .mapImage {
+    height: 500px;
+  }
+  
+  .mapButton {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 1439px) and (min-width: 1000px) {
+  .mapSection {
+    max-width: 1200px;
+    padding: 50px 30px;
+  }
+  
+  .mapImage {
+    height: 450px;
+  }
+  
+  .mapButton {
+    padding: 13px 26px;
+    font-size: 17px;
+  }
+}
+
+
+@media (max-width: 999px) and (min-width: 768px) {
+  .mapSection {
+    padding: 40px 25px;
+  }
+  
+  .mapImage {
+    height: 400px;
+  }
+  
+  .mapButton {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  .mapOverlay {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .mapSection {
+    padding: 30px 15px;
+  }
+  
+  .mapImage {
+    height: 350px;
+  }
+  
+  .mapButton {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  
+  .mapOverlay {
+    bottom: 12px;
+    right: 12px;
+  }
+}
+
+
+@media (max-width: 479px) and (min-width: 360px) {
+  .mapSection {
+    padding: 20px 10px;
+  }
+  
+  .mapImage {
+    height: 300px;
+  }
+  
+  .mapButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .mapOverlay {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
+@media (max-width: 359px) {
+  .mapSection {
+    padding: 15px 8px;
+  }
+  
+  .mapImage {
+    height: 250px;
+  }
+  
+  .mapButton {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .mapOverlay {
+    bottom: 8px;
+    right: 8px;
+  }
+}
 
 
 

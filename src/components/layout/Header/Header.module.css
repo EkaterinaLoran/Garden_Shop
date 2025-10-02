@@ -41,7 +41,183 @@
   background-color: #f0f0f0;
 }
 
-/* Для темной темы */
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #333;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navMenuContainer {
+  display: flex;
+  flex: 1;
+}
+
+/* ===== АДАПТИВНОСТЬ 1440px+ ===== */
+@media (min-width: 1440px) {
+  .headerTop,
+  .headerBottom {
+    padding: 1.5rem 4rem;
+  }
+  
+  .headerIcons {
+    gap: 2rem;
+  }
+}
+
+/* ===== АДАПТИВНОСТЬ 1000px - 1439px ===== */
+@media (max-width: 1439px) and (min-width: 1000px) {
+  .headerTop,
+  .headerBottom {
+    padding: 1.25rem 3rem;
+  }
+}
+
+/* ===== АДАПТИВНОСТЬ 768px - 999px ===== */
+@media (max-width: 999px) and (min-width: 768px) {
+  .headerTop,
+  .headerBottom {
+    padding: 1rem 2rem;
+  }
+  
+  .headerIcons {
+    gap: 1.25rem;
+  }
+}
+
+/* ===== АДАПТИВНОСТЬ 480px - 767px ===== */
+@media (max-width: 767px) and (min-width: 480px) {
+  .headerTop {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .headerBottom {
+    padding: 0.75rem 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .headerIcons {
+    gap: 1rem;
+  }
+  
+  .iconLink {
+    padding: 0.4rem;
+  }
+}
+
+/* ===== АДАПТИВНОСТЬ 360px - 479px ===== */
+@media (max-width: 479px) and (min-width: 360px) {
+  .headerTop {
+    padding: 0.5rem 1rem;
+  }
+  
+  .headerBottom {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .headerIcons {
+    gap: 0.75rem;
+  }
+  
+  .iconLink {
+    padding: 0.3rem;
+  }
+}
+
+/* ===== АДАПТИВНОСТЬ до 359px ===== */
+@media (max-width: 359px) {
+  .headerTop {
+    padding: 0.5rem;
+  }
+  
+  .headerBottom {
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .headerIcons {
+    gap: 0.5rem;
+  }
+  
+  .iconLink {
+    padding: 0.25rem;
+  }
+}
+
+/* ===== МОБИЛЬНОЕ МЕНЮ ===== */
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: flex;
+  }
+  
+  .navMenuContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .mobileMenuOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .headerBottom {
+    position: relative;
+    justify-content: space-between;
+  }
+}
+
+/* Адаптивность гамбургер-кнопки */
+@media (max-width: 767px) and (min-width: 480px) {
+  .mobileMenuButton {
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 479px) and (min-width: 360px) {
+  .mobileMenuButton {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .mobileMenuButton {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+}
+
+/* ===== ТЕМНАЯ ТЕМА ===== */
 @media (prefers-color-scheme: dark) {
   .header {
     background: #1a1a1a;
@@ -58,5 +234,16 @@
   
   .iconLink:hover {
     background-color: #404040;
+  }
+  
+  .mobileMenuButton {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .navMenuContainer {
+      background: #1a1a1a;
+      border-top-color: #333;
+    }
   }
 }

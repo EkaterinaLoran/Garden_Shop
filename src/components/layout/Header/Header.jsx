@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import DiscountBanner from "./DiscountBanner";
@@ -8,6 +8,12 @@ import CartIcon from "./Icons/CartIcon";
 import styles from "./Header.module.css";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.headerTop}>
@@ -16,7 +22,16 @@ const Header = () => {
       </div>
       <DiscountBanner />
       <div className={styles.headerBottom}>
-        <NavMenu />
+        <button 
+          className={styles.mobileMenuButton}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+        <div className={`${styles.navMenuContainer} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+          <NavMenu />
+        </div>
         <div className={styles.headerIcons}>
           <a href="#" className={styles.iconLink}>
             <HeartIcon />
