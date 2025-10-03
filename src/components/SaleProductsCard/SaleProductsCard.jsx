@@ -3,10 +3,10 @@ import styles from './SaleProductsCard.module.css';
 
 const SaleProductsCard = () => {
   const products = [
-    { id: 1, name: "Decorative forged brid...", price: 500, originalPrice: 1000, discount: 50, image: "/images/product1.jpg" },
-    { id: 2, name: "Flower basket", price: 100, originalPrice: 150, discount: 34, image: "/images/product2.jpg" },
-    { id: 3, name: "Aquarium lock", price: 150, originalPrice: 200, discount: 25, image: "/images/product3.jpg" },
-    { id: 4, name: "Secateurs", price: 199, originalPrice: 240, discount: 17, image: "/images/product4.jpg" }
+    { id: 1, name: "Decorative forged brid...", price: 500, originalPrice: 1000, discount: -50, image: "/Garden_Shop/images/Decorative.png" },
+    { id: 2, name: "Flower basket", price: 100, originalPrice: 150, discount: -34, image: "/Garden_Shop/images/Flower.png" },
+    { id: 3, name: "Aquarium lock", price: 150, originalPrice: 200, discount: -25, image: "/Garden_Shop/images/Aquarium.png" },
+    { id: 4, name: "Secateurs", price: 199, originalPrice: 240, discount: -17, image: "/Garden_Shop/images/Secateurs.png" }
   ];
 
   return (

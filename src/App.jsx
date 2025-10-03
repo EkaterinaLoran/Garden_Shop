@@ -1,27 +1,23 @@
-import React from 'react';
-import Header from './layout/Header/Header';
-import HeroSection from './components/HeroSection/HeroSection';
-import CategoriesSection from './components/CategoriesSection/CategoriesSection';
-import DiscountFormSection from './components/DiscountFormSection/DiscountFormSection';
-import SaleProductsCard from './components/SaleProductsCard/SaleProductsCard';
-import ContactInfo from './components/ContactInfo/ContactInfo';
-import Map from './components/Map/Map';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import HeroSection from "./components/HeroSection/HeroSection";
+import CategoriesSection from "./components/CategoriesSection/CategoriesSection";
+import SaleProductsCard from "./components/SaleProductsCard/SaleProductsCard";
+import ContactInfo from "./components/ContactInfo/ContactInfo";
+import DiscountFormSection from "./components/DiscountFormSection/DiscountFormSection";
+import Map from "./components/Map/Map";
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <HeroSection></HeroSection>
+      <HeroSection />
       <CategoriesSection /> 
       <DiscountFormSection />
       <SaleProductsCard />
       <ContactInfo />
       <Map />
-      <main>
-        <h1>Добро пожаловать в магазин!</h1>
-      </main>
-    </>
+    </div>
   );
 }
 

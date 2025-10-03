@@ -15,25 +15,25 @@ const CategoriesSection = () => {
             
             <div className={styles.categoriesGrid}>
                 <div className={styles.categoryItem}>
-                    <img className={styles.categoryImage} src="/images/Fertilizer.png" alt="Fertilizer" />
+                    <img className={styles.categoryImage} src="/Garden_Shop/images/Fertilizer.png" alt="Fertilizer" />
                     <h3 className={styles.categoryTitle}>Fertilizer</h3>
                     <p className={styles.categoryDescription}>Protective products and septic tanks</p>
                 </div>
                 
                 <div className={styles.categoryItem}>
-                    <img className={styles.categoryImage} src="/images/Protective.png" alt="Protective" />
+                    <img className={styles.categoryImage} src=" /Garden_Shop/images/Protective.png" alt="Protective" />
                     <h3 className={styles.categoryTitle}>Protective</h3>
                     <p className={styles.categoryDescription}>Protective products</p>
                 </div>
                 
                 <div className={styles.categoryItem}>
-                    <img className={styles.categoryImage} src="/images/Planting.png" alt="Planting" />
+                    <img className={styles.categoryImage} src="/Garden_Shop/images/Planting.png" alt="Planting" />
                     <h3 className={styles.categoryTitle}>Planting material</h3>
                     <p className={styles.categoryDescription}>Tools and equipment</p>
                 </div>
                 
                 <div className={styles.categoryItem}>
-                    <img className={styles.categoryImage} src="/images/Tools.png" alt="Tools" />
+                    <img className={styles.categoryImage} src="/Garden_Shop/images/Tools.png" alt="Tools" />
                     <h3 className={styles.categoryTitle}>Tools</h3>
                     <p className={styles.categoryDescription}>Tools and equipment</p>
                 </div>

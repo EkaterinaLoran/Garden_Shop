@@ -6,7 +6,7 @@ const HeroSection = () => {
         <section className={styles.heroSection}>
             <img 
                 className={styles.image}
-                src="/images/HeroSection.jpg"
+                src="/Garden_Shop/images/HeroSection.jpg"
                 alt="Garden products" 
             />
             <div className={styles.heroContent}>

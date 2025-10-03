@@ -11,7 +11,7 @@ const Map = () => {
         <section className={styles.mapSection}>
             <div className={styles.mapContainer}>
                 <img 
-                    src="/images/map.jpg" 
+                    src="/Garden_Shop/images/map.png" 
                     alt="Location map"
                     className={styles.mapImage}
                     onClick={handleMapClick}

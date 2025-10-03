@@ -12,7 +12,7 @@ const DiscountFormSection = () => {
             <h3 className={styles.title}>5% off on the first order</h3>
             <img 
                 className={styles.image} 
-                src="/images/DiscountsForm.png" 
+                src="/Garden_Shop/images/DiscountsForm.png" 
                 alt="Discount form" 
             />
             <form onSubmit={handleSubmit} className={styles.discountForm}>
