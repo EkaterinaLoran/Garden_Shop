@@ -38,7 +38,7 @@ const CategoriesSection = () => {
                     <p className={styles.categoryDescription}>Tools and equipment</p>
                 </div>
             </div>
-        </section>
+         </section>
     );
 };
 

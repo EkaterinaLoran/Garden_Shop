@@ -1,208 +1,78 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== АДАПТИВНОСТЬ 1440px+ ===== */
-@media (min-width: 1440px) {
-  .headerTop,
-  .headerBottom {
-    padding: 1.5rem 4rem;
-  }
-  
-  .headerIcons {
-    gap: 2rem;
-  }
+.header {
+  width: 100%;
+  height: 128px;
+  background: #fffff1;
+  border-bottom: 1px solid #dddddd;
 }
 
-/* ===== АДАПТИВНОСТЬ 1000px - 1439px ===== */
-@media (max-width: 1439px) and (min-width: 1000px) {
-  .headerTop,
-  .headerBottom {
-    padding: 1.25rem 3rem;
-  }
+.headerContainer {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* ===== АДАПТИВНОСТЬ 768px - 999px ===== */
-@media (max-width: 999px) and (min-width: 768px) {
-  .headerTop,
-  .headerBottom {
-    padding: 1rem 2rem;
-  }
-  
-  .headerIcons {
-    gap: 1.25rem;
-  }
+.logo {
+  width: 70px;
+  height: 70px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-top: 30px;
+  gap: 350px; 
 }
 
-/* ===== АДАПТИВНОСТЬ 480px - 767px ===== */
-@media (max-width: 767px) and (min-width: 480px) {
-  .headerTop {
-    padding: 0.75rem 1.5rem;
-  }
-  
-  .headerBottom {
-    padding: 0.75rem 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .headerIcons {
-    gap: 1rem;
-  }
-  
-  .iconLink {
-    padding: 0.4rem;
-  }
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: 0 auto; 
+  gap: 32px;
+}
+ 
+.navItem {
+  color: #424436;
+  text-decoration: none;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 130%;  
+  letter-spacing: 0px;
 }
 
-/* ===== АДАПТИВНОСТЬ 360px - 479px ===== */
-@media (max-width: 479px) and (min-width: 360px) {
-  .headerTop {
-    padding: 0.5rem 1rem;
-  }
-  
-  .headerBottom {
-    padding: 0.5rem 1rem;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  
-  .headerIcons {
-    gap: 0.75rem;
-  }
-  
-  .iconLink {
-    padding: 0.3rem;
-  }
+.navItem:hover {
+  color: #424436;
+  transform: translate(-1px);
 }
 
-/* ===== АДАПТИВНОСТЬ до 359px ===== */
-@media (max-width: 359px) {
-  .headerTop {
-    padding: 0.5rem;
-  }
-  
-  .headerBottom {
-    padding: 0.5rem;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .headerIcons {
-    gap: 0.5rem;
-  }
-  
-  .iconLink {
-    padding: 0.25rem;
-  }
+.cartButton {
 }
 
-/* ===== МОБИЛЬНОЕ МЕНЮ ===== */
-@media (max-width: 768px) {
-  .mobileMenuButton {
-    display: flex;
-  }
-  
-  .navMenuContainer {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: white;
-    border-top: 1px solid #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-  }
-  
-  .mobileMenuOpen {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .headerBottom {
-    position: relative;
-    justify-content: space-between;
-  }
+.cartIcon {
 }
 
-/* Адаптивность гамбургер-кнопки */
-@media (max-width: 767px) and (min-width: 480px) {
-  .mobileMenuButton {
-    width: 36px;
-    height: 36px;
-    font-size: 1.25rem;
-  }
-}
 
-@media (max-width: 479px) and (min-width: 360px) {
-  .mobileMenuButton {
-    width: 32px;
-    height: 32px;
-    font-size: 1.1rem;
-    padding: 0.3rem;
-  }
-}
 
-@media (max-width: 359px) {
-  .mobileMenuButton {
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
-    padding: 0.25rem;
-  }
-}
 
-/* ===== ТЕМНАЯ ТЕМА ===== */
-@media (prefers-color-scheme: dark) {
-  .header {
-    background: #1a1a1a;
-    border-bottom-color: #333;
-  }
-  
-  .headerTop {
-    background: #2d2d2d;
-  }
-  
-  .iconLink {
-    color: #fff;
-  }
-  
-  .iconLink:hover {
-    background-color: #404040;
-  }
-  
-  .mobileMenuButton {
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .navMenuContainer {
-      background: #1a1a1a;
-      border-top-color: #333;
-    }
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

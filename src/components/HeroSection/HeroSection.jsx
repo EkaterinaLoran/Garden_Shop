@@ -11,7 +11,8 @@ const HeroSection = () => {
             />
             <div className={styles.heroContent}>
                 <h1 className={styles.title}>
-                    Amazing Discounts on Garden Products!
+                    Amazing Discounts 
+                    on Garden Products!
                 </h1>
                 <a href="#" className={styles.button}>
                     Check out
