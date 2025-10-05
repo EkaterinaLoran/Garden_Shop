@@ -1,9 +1,12 @@
+.sale {
+   width: 100%;
+   background-color: #FFFFF1;
+}
 .saleSection {
-    padding: 80px 40px;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: #FFFFF1;
-
+  width: 100%;
+  padding: 80px 40px;
+  margin: 0 auto;
+  background-color: #FFFFF1;
 }
 
 .saleHeader {
@@ -18,7 +21,13 @@
     font-weight: 700;
     font-size: 48px;
     color: #424436;
-    margin: 0;
+    margin: 32px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
 }
 
 .allSalesBtn {

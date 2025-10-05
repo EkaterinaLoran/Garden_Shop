@@ -8,6 +8,7 @@ const DiscountFormSection = () => {
     };
 
     return (
+         <div className={styles.discountSection}>
         <div className={styles.discountContent}>
             <h3 className={styles.title}>5% off on the first order</h3>
             <img 
@@ -38,6 +39,7 @@ const DiscountFormSection = () => {
                     Get a discount
                 </button>
             </form>
+        </div>
         </div>
     );
 };

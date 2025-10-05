@@ -10,9 +10,11 @@ const SaleProductsCard = () => {
   ];
 
   return (
-    <section className={styles.saleSection}>
+    <section className={styles.sale}>
+    <div className={styles.saleSection}>
       <div className={styles.saleHeader}>
         <h2 className={styles.saleTitle}>Sale</h2>
+        <div className={styles.divider}></div>
         <button className={styles.allSalesBtn}>All sales</button>
       </div>
       <div className={styles.productsGrid}>
@@ -30,6 +32,7 @@ const SaleProductsCard = () => {
           </div>
         ))}
       </div>
+    </div>
     </section>
   );
 };

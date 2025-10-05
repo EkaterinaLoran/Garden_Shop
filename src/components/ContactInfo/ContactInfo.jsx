@@ -11,6 +11,13 @@ const ContactInfo = () => {
                     <h3 className={styles.contactSubtitle}>Phone</h3>
                     <p className={styles.contactText}>+49 999 999 99 99</p>
                 </div>
+
+                 <div className={styles.contactItem}>
+                    <h3 className={styles.contactSubtitle}>Socials</h3>
+                    <p className={styles.contactText}>
+                    
+                    </p>
+                </div>
                 
                 <div className={styles.contactItem}>
                     <h3 className={styles.contactSubtitle}>Address</h3>
