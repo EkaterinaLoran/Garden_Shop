@@ -1,6 +1,273 @@
 .contactSection {
-  padding: 80px 40px;
+  width: 100%;
+  background-color: #fffff1;
+  padding: 80px;
+  padding-left: 40px;
+  margin-bottom: 80px; 
+}
+
+.contactTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 40px ; 
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px; 
+  max-width: 1360px;
+  margin: 40px;
+}
+
+.contactItem {
+  background: #f2f6d3; 
+  border-radius: 12px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  color: #424436;
+  font-family: "Montserrat", sans-serif;  
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+padding-bottom: 16px;
+}
+
+.contactSubtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8B8B8B;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0;
+}
+
+
+.contactContent {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 0 0 32px 0; 
+} 
+
+.contactContent:last-child {
+  margin-bottom: 0;
+}
+
+
+.addressText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  padding-top: 16px;
+}
+
+
+.contactDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #424436;
+  margin: 32px 0; 
+  opacity: 0.6;
+}
+
+.workingHours {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8B8B8B;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0;
+ 
+}
+
+.hoursText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 44px;
+  background-color: #424436 ; 
+  color: #f2f6d3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.contactSection {
+  width: 100%;
+  background-color: #fffff1;
+  margin-bottom: 80px;
+  padding: 40px;
+}
+
+.contactTitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: #424436;
+  padding: 40px;
+}
+
+.contactGrid {
+  max-width: 1000px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px;
+  padding: 40px;
+}
+
+.contactItem {
+  width: 100%;
+  border-radius: 12px;
+  background: #f2f6d3;
+ margin:32px;
+padding: 32px;}
+
+.contactSubtitle {
+  width: 100%;
+   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8b8b8b;
+}
+
+.contactText {
+  font-family: Montserrat, sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+color: #424436;
+
+}
+
+.socialsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+} 
+
+.workingHours {
+  width: 100%;
+   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8b8b8b;
+  margin-l: 32px;
+
+}
+
+.hours {
+  font-family: Montserrat, sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+color: #424436;
+
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contactSection {
   max-width: 100%;
+  padding: 80px 40px;
   margin: 0 auto;
   background-color: #fffff1;
 }
@@ -11,22 +278,23 @@
   font-size: 64px;
   color: #424436;
   text-align: center;
+  margin-bottom: 60px; 
 }
 
 .contactGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 60px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .contactItem {
-  text-align: center;
-  padding: 40px 20px;
+  text-align: left;
+  padding: 40px 32px;
   background: #f2f6d3;
   border-radius: 8px;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .contactSubtitle {
@@ -34,7 +302,7 @@
   font-weight: 600;
   font-size: 24px;
   color: #424436;
-  padding-bottom: 32px;
+  margin: 32px;
   padding-left: 32px;
 }
 
@@ -44,21 +312,21 @@
   font-size: 18px;
   color: #666;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 16px 0 ;
 }
 
-.socialsContainer {
+ .socialsContainer {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
+  gap: 32px;
+} 
 
 .workingHours {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #424436;
-  margin: 0;
+  margin: 0 0 8px 0;
 }
 
 .hours {
@@ -69,190 +337,10 @@
   margin: 0;
 }
 
-@media (min-width: 1440px) {
-  .contactSection {
-    max-width: 1400px;
-    padding: 100px 60px;
-  }
-
-  .contactGrid {
-    max-width: 1200px;
-    gap: 70px;
-  }
-
-  .contactTitle {
-    font-size: 52px;
-  }
-
-  .contactItem {
-    padding: 50px 25px;
-  }
-}
-
-@media (max-width: 1439px) and (min-width: 1000px) {
-  .contactSection {
-    max-width: 1200px;
-    padding: 90px 50px;
-  }
-
-  .contactGrid {
-    max-width: 1100px;
-    gap: 50px;
-  }
-
-  .contactTitle {
-    font-size: 46px;
-  }
-
-  .contactItem {
-    padding: 45px 20px;
-  }
-}
-
-@media (max-width: 999px) and (min-width: 768px) {
-  .contactSection {
-    padding: 70px 30px;
-  }
-
-  .contactGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  .contactTitle {
-    font-size: 42px;
-    margin-bottom: 50px;
-  }
-
-  .contactItem {
-    padding: 35px 20px;
-  }
-
-  .contactSubtitle {
-    font-size: 22px;
-  }
-
-  .contactText {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 480px) {
-  .contactSection {
-    padding: 50px 20px;
-  }
-
-  .contactGrid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    max-width: 500px;
-  }
-
-  .contactTitle {
-    font-size: 38px;
-    margin-bottom: 40px;
-  }
-
-  .contactItem {
-    padding: 30px 20px;
-  }
-
-  .contactSubtitle {
-    font-size: 20px;
-  }
-
-  .contactText {
-    font-size: 16px;
-  }
-
-  .workingHours,
-  .hours {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 479px) and (min-width: 360px) {
-  .contactSection {
-    padding: 40px 15px;
-  }
-
-  .contactGrid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .contactTitle {
-    font-size: 34px;
-    margin-bottom: 35px;
-  }
-
-  .contactItem {
-    padding: 25px 15px;
-  }
-
-  .contactSubtitle {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-
-  .contactText {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  .workingHours,
-  .hours {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 359px) {
-  .contactSection {
-    padding: 30px 10px;
-  }
-
-  .contactGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .contactTitle {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-
-  .contactItem {
-    padding: 20px 12px;
-  }
-
-  .contactSubtitle {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-
-  .contactText {
-    font-size: 14px;
-  }
-
-  .workingHours,
-  .hours {
-    font-size: 13px;
-  }
-}
-
-/* Адаптивность для мобильных
-@media (max-width: 768px) {
-    .contactGrid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .contactSection {
-        padding: 40px 20px;
-    }
-    
-    .contactTitle {
-        font-size: 36px;
-        margin-bottom: 40px;
-    }
-} */
+.contactDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 24px 0;
+} 
+ */

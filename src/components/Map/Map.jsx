@@ -8,6 +8,7 @@ const Map = () => {
     };
 
     return (
+        
         <section className={styles.mapSection}>
             <div className={styles.mapContainer}>
                 <img 
@@ -23,6 +24,7 @@ const Map = () => {
                 </div>
             </div>
         </section>
+       
     );
 };
 

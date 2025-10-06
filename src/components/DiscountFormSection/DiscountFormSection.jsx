@@ -9,8 +9,9 @@ const DiscountFormSection = () => {
 
     return (
          <div className={styles.discountSection}>
-        <div className={styles.discountContent}>
+        <div className={styles.discountHeader}>
             <h3 className={styles.title}>5% off on the first order</h3>
+            <div className={styles.discountContent}>
             <img 
                 className={styles.image} 
                 src="/Garden_Shop/images/DiscountsForm.png" 
@@ -39,6 +40,7 @@ const DiscountFormSection = () => {
                     Get a discount
                 </button>
             </form>
+        </div>
         </div>
         </div>
     );

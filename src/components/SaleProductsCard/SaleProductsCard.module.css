@@ -12,16 +12,19 @@
 .saleHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+    align-items: center; 
+    margin-bottom: 80px;
+   padding-left: 40px;
 }
 
 .saleTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    color: #424436;
-    margin: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 40px; 
 }
 
 .divider {
@@ -53,6 +56,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+    margin: 40px;
 }
 
 .saleProductCard {
@@ -62,6 +66,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 6px;
     overflow: hidden;
+    
 }
 
 .discountBadge {

@@ -12,11 +12,18 @@ const ContactInfo = () => {
                     <p className={styles.contactText}>+49 999 999 99 99</p>
                 </div>
 
-                 <div className={styles.contactItem}>
+                <div className={styles.contactItem}>
                     <h3 className={styles.contactSubtitle}>Socials</h3>
-                    <p className={styles.contactText}>
+                    <div className={styles.socialIcons}>
+        
+                        <a href="#" className={styles.socialLink}>
+                            <i className="fab fa-instagram"></i>
+                        </a>
                     
-                    </p>
+                        <a href="#" className={styles.socialLink}>
+                            <i className="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div className={styles.contactItem}>
@@ -28,14 +35,16 @@ const ContactInfo = () => {
                 </div>
                 
                 <div className={styles.contactItem}>
-                    <h3 className={styles.contactSubtitle}>Socials</h3>
-                    <div className={styles.socialsContainer}>
-                        <p className={styles.workingHours}>Working Hours</p>
+                    <div className={styles.workingHoursContainer}>
+                        <h3 className={styles.contactSubtitle}>Working Hours</h3>
                         <p className={styles.hours}>24 hours a day</p>
-                    </div>
+                        
+                    </div> 
                 </div>
             </div>
+            
         </section>
+        
     );
 };
 
