@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
@@ -7,82 +8,58 @@ import SaleProductsCard from "./components/SaleProductsCard/SaleProductsCard";
 import ContactInfo from "./components/ContactInfo/ContactInfo";
 import DiscountFormSection from "./components/DiscountFormSection/DiscountFormSection";
 import Map from "./components/Map/Map";
+import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
+import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage"; 
+import AllProductsPage from "./pages/AllProductsPage/AllProductsPage";
 
 function App() {
   return (
     <div>
-      <Header />
-      <HeroSection />
-      <CategoriesSection /> 
-      <DiscountFormSection />
-      <SaleProductsCard />
-      <ContactInfo />
-      <Map />
+      <Routes>
+        
+        <Route path="/Garden_Shop" element={
+          <>
+            <Header />
+            <HeroSection />
+            <CategoriesSection /> 
+            <DiscountFormSection />
+            <SaleProductsCard />
+            <ContactInfo />
+            <Map />
+          </>
+        } />
+        
+        <Route path="/" element={
+          <>
+            <Header />
+            <HeroSection />
+            <CategoriesSection /> 
+            <DiscountFormSection />
+            <SaleProductsCard />
+            <ContactInfo />
+            <Map />
+          </>
+        } />
+
+        <Route path="/Garden_Shop/categories" element={<CategoriesPage />} />
+        <Route path="/categories" element={<CategoriesPage />} />
+        
+        <Route path="/Garden_Shop/products" element={<CategoryProductsPage />} />
+        <Route path="/products" element={<CategoryProductsPage />} />
+        <Route path="/Garden_Shop/sales" element={<CategoryProductsPage />} />
+        <Route path="/sales" element={<CategoryProductsPage />} />
+        
+        <Route path="/Garden_Shop/category/:categoryId" element={<CategoryProductsPage />} />
+        <Route path="/category/:categoryId" element={<CategoryProductsPage />} />
+        <Route path="/Garden_Shop/products" element={<AllProductsPage />} />
+       <Route path="/products" element={<AllProductsPage />} />
+      </Routes>
+        
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
-
-// export default App;
-
-
-
-
 
 
 

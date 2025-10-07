@@ -1,20 +1,353 @@
-.categoryNav{
-
+.header {
+  width: 100%;
+  height: 128px;
+  background: #fffff1;
+  border-bottom: 1px solid #dddddd;
 }
 
-.navButton{
-
+.headerContainer {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navButton:hover {
-
+.logo {
+  width: 70px;
+  height: 70px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-top: 30px;
+  gap: 350px; 
 }
 
-.navButton.active {
-
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: 0 auto; 
+  gap: 32px;
+}
+ 
+.navItem {
+  color: #424436;
+  text-decoration: none;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 130%;  
+  letter-spacing: 0px;
 }
 
-.mainContent{
+.navItem:hover {
+  color: #424436;
+  transform: translate(-1px);
+}
+
+.cartButton {
+}
+
+.cartIcon {
+}
+
+.divider {
+  width: 70%;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 40px;
+    font-family: "Montserrat", sans-serif;
+    background: #fffff1;
     
 }
-      
+
+.breadcrumbLink {
+    /* color: #424436;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease; */
+     width: 142px;
+  height: 36px;
+  border: 1px solid #92a134;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background: none;
+  color: #92a134;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumbLink:hover {
+    color: #92a134;
+}
+
+.dividerBreadCrumbs {
+     width:16px;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.breadcrumbActive {
+   width: 142px;
+  height: 36px;
+  border: 1px solid #92a134;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background: none;
+  color: #92a134;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    /* color: #8B8B8B;
+    font-weight: 500; */
+}
+
+.categoriesSection {
+  width: 100%;
+  background-color: #fffff1;
+  padding-top: 40px;
+  padding: 80px;
+  margin: 0 auto;
+}
+
+.categoriesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  width: 361px;
+  height: 70px;
+  margin-left: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #424436;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.categories {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.categoryItem {
+  text-align: center;
+  padding: 16px;
+}
+
+.categoryImage {
+  width: 100%;
+  border-radius: 6px;
+  padding-top: 40px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.categoryTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #424436;
+}
+
+.contactSection {
+  width: 100%;
+  background-color: #fffff1;
+  padding: 80px;
+  padding-left: 40px;
+  margin-bottom: 80px; 
+}
+
+.contactTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 40px ; 
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px; 
+  max-width: 1360px;
+  margin: 40px;
+}
+
+.contactItem {
+  background: #f2f6d3; 
+  border-radius: 12px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  color: #424436;
+  font-family: "Montserrat", sans-serif;  
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+padding-bottom: 16px;
+}
+
+.contactSubtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8B8B8B;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0;
+}
+
+
+.contactContent {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 0 0 32px 0; 
+} 
+
+.contactContent:last-child {
+  margin-bottom: 0;
+}
+
+
+.addressText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  padding-top: 16px;
+}
+
+
+.contactDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #424436;
+  margin: 32px 0; 
+  opacity: 0.6;
+}
+
+.workingHours {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8B8B8B;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0;
+ 
+}
+
+.hoursText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 44px;
+  background-color: #424436 ; 
+  color: #f2f6d3;
+}
+
+.mapSection {
+  width: 100%;
+    padding: 40px 20px;
+    margin: 40px;
+    background: #FFFFF1;
+    color: #FFFFF1;
+}
+
+.mapContainer {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mapContainer:hover {
+    transform: translateY(-4px);
+}
+
+.mapImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.mapOverlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.mapButton {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #92A134;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #92A134;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.mapButton:hover {
+    background: #92A134;
+    color: white;
+}

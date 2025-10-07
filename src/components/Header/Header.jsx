@@ -1,4 +1,5 @@
-import React from 'react';    
+import React from 'react'; 
+import { Link } from 'react-router-dom';   
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -12,10 +13,10 @@ const Header = () => {
         />
         
         <nav className={styles.navigation}>
-          <a href="#" className={styles.navItem}>Main Page</a>
-          <a href="#" className={styles.navItem}>Categories</a>
-          <a href="#" className={styles.navItem}>All products</a>
-          <a href="#" className={`${styles.navItem} ${styles.sales}`}>All sales</a>
+          <Link to="/Garden_Shop" className={styles.navItem}>Main Page</Link>
+          <Link to="/Garden_Shop/Categories" className={styles.navItem}>Categories</Link>
+          <Link to="/Garden_Shop/products" className={styles.navItem}>All products</Link>
+          <Link to="/Garden_Shop/sales" className={`${styles.navItem} ${styles.sales}`}>All sales</Link>
         </nav>
 
         <button className={styles.cartButton}>
@@ -31,7 +32,7 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header; 
 
 
 
