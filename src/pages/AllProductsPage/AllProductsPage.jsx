@@ -118,7 +118,7 @@ const handleAddToCart = (productId) => {
             
                     <button className={styles.cartButton}>
                         <img 
-                            src="/Garden_Shop/images/basket-empty.svg" 
+                            src="/Garden_Shop/images/icon.png" 
                             alt="Cart" 
                             className={styles.cartIcon}
                         />

@@ -174,37 +174,161 @@
 }
 
 
+/* ProductPage.module.css */
 
+.productContent {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
+.productImages {
+    flex: 1;
+}
 
+.mainImage {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #f8f9fa;
+}
 
+.productInfo {
+    flex: 1;
+    max-width: 500px;
+}
 
+.productTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 24px;
+}
 
+.priceSection {
+    margin-bottom: 30px;
+}
 
+.priceContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
 
+.currentPrice {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2d3748;
+}
 
+.originalPrice {
+    font-size: 20px;
+    color: #a0aec0;
+    text-decoration: line-through;
+}
 
+.discountBadge {
+    background: #F26D22;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
+.quantitySection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
 
+.quantityControls {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.quantityButton {
+    width: 40px;
+    height: 40px;
+    background: #f7fafc;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
 
+.quantityButton:hover {
+    background: #edf2f7;
+}
 
+.quantity {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+}
 
+.addToCartButton {
+    background: #92A134;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    min-width: 140px;
+}
 
+.addToCartButton:hover {
+    background: #3182ce;
+}
 
+.descriptionSection {
+    border-top: 2px solid #e2e8f0;
+    padding-top: 30px;
+}
 
+.descriptionTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 16px;
+}
 
+.descriptionText {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
 
+.readMoreButton {
+    background: none;
+    border: none;
+    color: #4299e1;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
+.readMoreButton:hover {
+    color: #3182ce;
+}
 
 
 

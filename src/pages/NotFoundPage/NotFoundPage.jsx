@@ -1,41 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './CategoriesPage.module.css';
+import styles from './NotFoundPage.module.css';
 
-const CategoriesPage = () => {
+const NotFoundPage = () => {
     const handleMapClick = () => {
         window.open('https://maps.google.com/?q=Linkstraße+2,+10785+Berlin,+Germany', '_blank');
     };
 
-    const categories = [
-        {
-            id: 1,
-            title: "Fertilizer",
-            image: "/Garden_Shop/images/Fertilizer.png"
-        },
-        {
-            id: 2,
-            title: "Protective products and septic tanks",
-            image: "/Garden_Shop/images/Protective.png"
-        },
-        {
-            id: 3,
-            title: "Planting material",
-            image: "/Garden_Shop/images/Planting.png"
-        },
-        {
-            id: 4,
-            title: "Tools and equipment",
-            image: "/Garden_Shop/images/Tools.png"
-        },
-        {
-            id: 5,
-            title: "Pots and planters",
-            image: "/Garden_Shop/images/Pots.png"
-        }
-    ];
-
     return (
+
         <div className={styles.container}>
             <header className={styles.header}>
                 <div className={styles.headerContainer}>
@@ -46,53 +19,53 @@ const CategoriesPage = () => {
                     />
                     
                     <nav className={styles.navigation}>
-                        <a href="#" className={styles.navItem}>Main Page</a>
-                        <a href="#" className={styles.navItem}>Categories</a>
-                        <a href="#" className={styles.navItem}>All products</a>
-                        <a href="#" className={`${styles.navItem} ${styles.sales}`}>All sales</a>
+                        <Link to="/" className={styles.navItem}>Main Page</Link>
+                        <Link to="/categories" className={styles.navItem}>Categories</Link>
+                        <Link to="/products" className={styles.navItem}>All products</Link>
+                        <Link to="/sales" className={`${styles.navItem} ${styles.sales}`}>All sales</Link>
                     </nav>
             
-                    <button className={styles.cartButton}>
+                    <Link to="/cart" className={styles.cartButton}>
                         <img 
                             src="/Garden_Shop/images/icon.png" 
                             alt="Cart" 
                             className={styles.cartIcon}
                         />
                         <span className={styles.cartCount}>0</span>
-                    </button>     
+                    </Link>     
                 </div>
                 <div className={styles.divider}></div>
             </header>
 
-            <nav className={styles.breadcrumbs}>
-                <Link to="/" className={styles.breadcrumbLink}>Main page</Link>
-                 <div className={styles.dividerBreadCrumbs}></div>
-                <span className={styles.breadcrumbActive}>Categories</span>
-            </nav>
-
-            <section className={styles.categoriesSection}>
-                <div className={styles.categoriesHeader}>
-                    <h2 className={styles.title}>Categories</h2>
-                </div>
-                <div className={styles.categories}>
-                    {categories.map((category) => (
-                        <Link key={category.id} to={`/category/${category.id}`}  className={styles.categoryItem}>
-                            <img className={styles.categoryImage} src={category.image} alt={category.title} />
-                            <h3 className={styles.categoryTitle}>{category.title}</h3>
+            <section className={styles.notFoundSection}>
+                <div className={styles.notFoundContent}>
+                    <div className={styles.errorImage}>
+                        <img 
+                            src="/Garden_Shop/images/404.png" 
+                            alt="Page Not Found" 
+                            className={styles.errorImg}
+                        />
+                    </div>
+                    <div className={styles.errorText}>
+                        <h1 className={styles.errorTitle}>Page Not Found</h1>
+                        <p className={styles.errorDescription}>
+                            We're sorry, the page you requested could not be found.<br />
+                            Please go back to the homepage.
+                        </p>
+                        <Link to="/" className={styles.homeButton}>
+                            Go Home
                         </Link>
-                    ))}
+                    </div>
                 </div>
             </section>
 
             <section className={styles.contactSection}>
                 <h2 className={styles.contactTitle}>Contact</h2>
-                             
                 <div className={styles.contactGrid}>
                     <div className={styles.contactItem}>
                         <h3 className={styles.contactSubtitle}>Phone</h3>
                         <p className={styles.contactText}>+49 999 999 99 99</p>
                     </div>
-     
                     <div className={styles.contactItem}>
                         <h3 className={styles.contactSubtitle}>Socials</h3>
                         <div className={styles.socialIcons}>
@@ -104,7 +77,6 @@ const CategoriesPage = () => {
                             </a>
                         </div>
                     </div>
-                    
                     <div className={styles.contactItem}>
                         <h3 className={styles.contactSubtitle}>Address</h3>
                         <p className={styles.contactText}>
@@ -112,16 +84,13 @@ const CategoriesPage = () => {
                             10785, Berlin, Deutschland
                         </p>
                     </div>
-                    
                     <div className={styles.contactItem}>
-                        <div className={styles.workingHoursContainer}>
-                            <h3 className={styles.contactSubtitle}>Working Hours</h3>
-                            <p className={styles.hours}>24 hours a day</p>
-                        </div> 
+                        <h3 className={styles.contactSubtitle}>Working Hours</h3>
+                        <p className={styles.hours}>24 hours a day</p>
                     </div>
                 </div>
             </section>
-            
+
             <section className={styles.mapSection}>
                 <div className={styles.mapContainer}>
                     <img 
@@ -131,14 +100,15 @@ const CategoriesPage = () => {
                         onClick={handleMapClick}
                     />
                     <div className={styles.mapOverlay}>
-                        <button className={styles.mapButton}>
+                        <button className={styles.mapButton} onClick={handleMapClick}>
                             View on Google Maps
                         </button>
                     </div>
                 </div>
             </section>
-        </div> 
+        </div>
     );
 };
 
-export default CategoriesPage;
+export default NotFoundPage;
+

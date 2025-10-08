@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';   
 import styles from './Header.module.css';
 
+
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -21,7 +22,7 @@ const Header = () => {
 
         <button className={styles.cartButton}>
           <img 
-            src="/Garden_Shop/images/basket-empty.svg" 
+            src="/Garden_Shop/images/icon.png" 
             alt="Cart" 
             className={styles.cartIcon}
           />

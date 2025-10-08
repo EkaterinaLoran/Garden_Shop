@@ -92,152 +92,86 @@
   background-color: #dddddd;
 }
 
-.breadcrumbs {
+.container {
+    min-height: 100vh;
+    background-color: #fffff1;
+}
+
+.notFoundSection {
+    padding: 80px 20px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+}
+
+.notFoundContent {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    margin: 40px;
-    font-family: "Montserrat", sans-serif;
-    background: #fffff1;
-    
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
+    max-width: 600px;
+    text-align: center;
 }
 
-.breadcrumbLink {
-    /* color: #424436;
+.errorImage {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.errorImg {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.errorText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorTitle {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.errorDescription {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.homeButton {
+    display: inline-block;
+    background-color: #92A134;
+    color: white;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease; */
-     width: 142px;
-  height: 36px;
-  border: 1px solid #92a134;
-  border-radius: 6px;
-  padding: 8px 16px;
-  background: none;
-  color: #92a134;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #92A134;
 }
 
-.breadcrumbLink:hover {
-    color: #92a134;
+.homeButton:hover {
+    background-color: transparent;
+    color: #92A134;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(146, 161, 52, 0.2);
 }
-
-.dividerBreadCrumbs {
-     width:16px;
-    height: 1px;
-    background-color: #dddddd;
-}
-
-.breadcrumbActive {
-   width: 142px;
-  height: 36px;
-  border: 1px solid #92a134;
-  border-radius: 6px;
-  padding: 8px 16px;
-  background: none;
-  color: #92a134;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    /* color: #8B8B8B;
-    font-weight: 500; */
-}
-.productsSection {
-  width: 100%;
-  background-color: #fffff1;
-  padding-top: 40px;
-  padding: 80px;
-  margin: 0 auto;
-}
-.pageTitle{
-  width: 361px;
-  height: 70px;
-  margin-left: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  color: #424436;
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contactSection {
   width: 100%;
   background-color: #fffff1;

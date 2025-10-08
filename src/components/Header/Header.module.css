@@ -49,9 +49,40 @@
 }
 
 .cartButton {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+ 
 }
 
 .cartIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+
+}
+
+.cartCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #92A134;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 

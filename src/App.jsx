@@ -11,6 +11,10 @@ import Map from "./components/Map/Map";
 import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
 import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage"; 
 import AllProductsPage from "./pages/AllProductsPage/AllProductsPage";
+import ProductPage from "./pages/ProductPage/ProductPage";
+import CartPage from "./pages/CartPage/CartPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+
 
 function App() {
   return (
@@ -44,23 +48,31 @@ function App() {
         <Route path="/Garden_Shop/categories" element={<CategoriesPage />} />
         <Route path="/categories" element={<CategoriesPage />} />
         
-        <Route path="/Garden_Shop/products" element={<CategoryProductsPage />} />
-        <Route path="/products" element={<CategoryProductsPage />} />
+        
+        <Route path="/Garden_Shop/products" element={<AllProductsPage />} />
+        <Route path="/products" element={<AllProductsPage />} />
+        
         <Route path="/Garden_Shop/sales" element={<CategoryProductsPage />} />
         <Route path="/sales" element={<CategoryProductsPage />} />
         
         <Route path="/Garden_Shop/category/:categoryId" element={<CategoryProductsPage />} />
         <Route path="/category/:categoryId" element={<CategoryProductsPage />} />
-        <Route path="/Garden_Shop/products" element={<AllProductsPage />} />
-       <Route path="/products" element={<AllProductsPage />} />
-      </Routes>
+      <Route path="/product/:productId" element={<ProductPage />} />
+
+      <Route path="/Garden_Shop/product/:productId" element={<ProductPage />} />
+        <Route path="/product/:productId" element={<ProductPage />} />
+
         
+<Route path="/Garden_Shop/cart" element={<CartPage />} />
+<Route path="/cart" element={<CartPage />} />
+<Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </div>
+    
   );
 }
 
 export default App;
-
 
 
 
