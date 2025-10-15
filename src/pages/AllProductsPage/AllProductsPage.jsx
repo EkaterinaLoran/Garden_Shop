@@ -79,7 +79,7 @@ const AllProductsPage = () => {
       name: "Decorative forged brid...",
       price: 500,
       originalPrice: 1000,
-      discount: -50,
+      discount: 50,
       image: "/Garden_Shop/images/Decorative.png",
     },
     {
@@ -87,7 +87,7 @@ const AllProductsPage = () => {
       name: "Flower basket",
       price: 100,
       originalPrice: 150,
-      discount: -34,
+      discount: 34,
       image: "/Garden_Shop/images/Flower.png",
     },
     {
@@ -95,7 +95,7 @@ const AllProductsPage = () => {
       name: "Aquarium lock",
       price: 150,
       originalPrice: 200,
-      discount: -25,
+      discount: 25,
       image: "/Garden_Shop/images/Aquarium.png",
     },
   ];
@@ -290,6 +290,19 @@ const AllProductsPage = () => {
               </div>
             </div>
           </section>
+          <section className={styles.mapSection}>
+                <div className={styles.mapContainer}>
+                  <img
+                    src="/Garden_Shop/images/map.png"
+                    alt="Location map"
+                    className={styles.mapImage}
+                    onClick={handleMapClick}
+                  />
+                  <div className={styles.mapOverlay}>
+                    <button className={styles.mapButton}>View on Google Maps</button>
+                  </div>
+                </div>
+              </section>
     </div>
   );
 };

@@ -83,7 +83,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: #92A134;
+  background:#92A134;
   color: white;
   border-radius: 50%;
   width: 20px;
@@ -243,7 +243,7 @@
     position: absolute;
     top: 16px;
     left: 16px;
-    background: #92a134;
+    background: #FF6B35;
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
