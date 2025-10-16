@@ -3,7 +3,8 @@ import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
   return (
-    <section className={styles.heroSection}>
+    <section className={styles.hero}>
+    <div className={styles.heroSection}>
       <img
         className={styles.image}
         src="/Garden_Shop/images/HeroSection.jpg"
@@ -15,6 +16,7 @@ const HeroSection = () => {
           Check out
         </a>
       </div>
+    </div>
     </section>
   );
 };

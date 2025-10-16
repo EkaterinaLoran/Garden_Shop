@@ -87,7 +87,7 @@
 
 
 .divider {
-  width: 70%;
+  width: 100%;
   height: 1px;
   background-color: #dddddd;
 }
@@ -103,18 +103,13 @@
 }
 
 .breadcrumbLink {
-    /* color: #424436;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease; */
-     width: 142px;
+   width: 142px;
   height: 36px;
-  border: 1px solid #92a134;
+  border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 8px 16px;
   background: none;
-  color: #92a134;
+  color: #8B8B8B;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
@@ -126,11 +121,11 @@
 }
 
 .breadcrumbLink:hover {
-    color: #92a134;
+    color: #8B8B8B;
 }
 
 .dividerBreadCrumbs {
-     width:16px;
+    width:16px;
     height: 1px;
     background-color: #dddddd;
 }
@@ -138,11 +133,11 @@
 .breadcrumbActive {
    width: 142px;
   height: 36px;
-  border: 1px solid #92a134;
+  border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 8px 16px;
   background: none;
-  color: #92a134;
+  color: #424436;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
@@ -151,10 +146,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-    /* color: #8B8B8B;
-    font-weight: 500; */
 }
-
+.breadcrumbActive:hover {
+    color: #8B8B8B;
+} 
 .categoriesSection {
   width: 100%;
   background-color: #fffff1;

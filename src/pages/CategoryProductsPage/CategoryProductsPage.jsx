@@ -147,9 +147,9 @@ const CategoryProductsPage = () => {
           Main page
         </Link>
         <div className={styles.dividerBreadCrumbs}></div>
-        <span className={styles.breadcrumbActive}>Categories</span>
+        <Link to="categories" className={styles.breadcrumbLink}>Categories</Link>
         <div className={styles.dividerBreadCrumbs}></div>
-        <span className={styles.breadcrumbActive}>Tools and equipment</span>
+        <Link to="tools and equipment" className={styles.breadcrumbActive}>Tools and equipment</Link>
       </nav>
 
       <div className={styles.mainContent}>

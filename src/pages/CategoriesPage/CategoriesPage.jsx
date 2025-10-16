@@ -78,7 +78,7 @@ const CategoriesPage = () => {
             <nav className={styles.breadcrumbs}>
                 <Link to="/" className={styles.breadcrumbLink}>Main page</Link>
                  <div className={styles.dividerBreadCrumbs}></div>
-                <span className={styles.breadcrumbActive}>Categories</span>
+                <Link to="categories" className={styles.breadcrumbActive}>Categories</Link>
             </nav>
 
             <section className={styles.categoriesSection}>

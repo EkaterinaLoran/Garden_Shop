@@ -1,7 +1,4 @@
-
-
-
- import React, { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./AllProductsPage.module.css";
 
@@ -148,11 +145,7 @@ const AllProductsPage = () => {
         <Link to="/" className={styles.breadcrumbLink}>
           Main page
         </Link>
-        <span className={styles.breadcrumbSeparator}>/</span>
-        <Link to="/categories" className={styles.breadcrumbLink}>
-          Categories
-        </Link>
-        <span className={styles.breadcrumbSeparator}>/</span>
+       <div className={styles.dividerBreadCrumbs}></div>
         <span className={styles.breadcrumbActive}>All Products</span>
       </nav>
 
