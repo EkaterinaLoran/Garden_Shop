@@ -149,12 +149,12 @@ const CategoryProductsPage = () => {
         <div className={styles.dividerBreadCrumbs}></div>
         <Link to="categories" className={styles.breadcrumbLink}>Categories</Link>
         <div className={styles.dividerBreadCrumbs}></div>
-        <Link to="tools and equipment" className={styles.breadcrumbActive}>Tools and equipment</Link>
+        <Link to="tools and equipment" className={styles.breadcrumbActiveTools}>Tools and equipment</Link>
       </nav>
 
-      <div className={styles.mainContent}>
-        <section className={styles.productsSection}>
-          <h1 className={styles.pageTitle}>Tools and equipment</h1>
+      <section className={styles.productsSection}>
+        <div className={styles.productHeader}>
+          <h3 className={styles.pageTitle}>Tools and equipment</h3>
 
           <aside className={styles.sidebar}>
             <h3 className={styles.filterTitle}>Price</h3>
@@ -250,8 +250,8 @@ const CategoryProductsPage = () => {
               </Link>
             ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section className={styles.contactSection}>
         <h2 className={styles.contactTitle}>Contact</h2>

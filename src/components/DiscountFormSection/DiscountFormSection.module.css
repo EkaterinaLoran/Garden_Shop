@@ -1,27 +1,15 @@
 .discountSection {
-  background-color: #fffff1;
-  width: 100%;
-   padding: 80px; 
+ padding: 0 40px; 
+  margin: 80px 0;
 }
 .discountHeader {
-    width: 100%;
-  background: linear-gradient(261.47deg, #87933d 32.63%, #55610b 98.96%);
- /* margin-bottom: 80px; */
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px;
-  border-radius: 6px;
-  max-width: 1360px;
-  margin: 0 auto; */
+ background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+
+ 
 }
 
 .title {
-  width: 100%;
-  height: 70px;
-  padding-top: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 32px;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-weight: 700 bold;
@@ -34,6 +22,8 @@
 
 .discountContent {
   display: flex;
+  align-items: center;
+  gap: 32px; 
 }
 
 
@@ -41,238 +31,68 @@
   width: 602px;
   height: 360px;
   padding: 32px;
-  gap: 20px;
-  /* padding-bottom: 24px;  */
+  padding-bottom: 0;
+  gap: 32px;
 }
 
   .discountForm { 
-     max-width: 450px;
-    height: 276px;
-    display: flex;
-     flex-direction: column;
-    /* justify-content: flex-end;
-   
-    margin-left: auto; 
-    align-items: center;
-  justify-items: end;
-  align-self: flex-start;  */
-  gap: 16px;
-  padding: 32px;  
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  width: 100%; 
+  padding-right: 32px; 
  }  
 
 .input {
-   width: 450px;
+  width: 100%;
   height: 58px;
-  border: 1px solid #ddd;
+  border: 1px solid #fffff1;
   border-radius: 6px;
-  /* padding: 0 16px; */
-  background-color: #ffffff;
+  background-color: transparent; 
+  color: #fffff1;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  box-sizing: border-box;
-  gap: 12px;
-padding-right: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
  
 }
 
-.input:focus {
-  outline: none;
-  border-color: #92a134;
+.input::placeholder {
+ font-family: Montserrat, sans-serif;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px; 
+color: #ffffff;
+
 }
 
-.submitBtn {
+/* .input:focus {
+  outline: none;
+  border-color: #fffff1;
+} */
+
+.submitBtn { 
   width: 100%;
   height: 58px;
-  border: none;
-  border-radius: 6px;
+  border: 1px solid #fffff1;
+  border-radius: 6px; 
   background-color: #fffff1;
   color: #424436;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .submitBtn:hover {
-  background-color: #7a8a2b;
+  background-color: #fffff1;
 } 
 
-/* .discount_content {
-    width: 1360px;
-    height: 486px;
-    top: 1416px;
-    left: 40px;
-    border-radius: 6px;
-    padding-top: 32px;
-    padding-right: 32px;
-    padding-left: 32px;
-    gap: 24px;
-    background: linear-gradient(261.47deg, #0B710B 32.63%, #339933 98.96%),
-linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-}
-
-.h3 {
-    width: 1296px;
-    height: 70px;
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-    font-family: Monserrat;
-    font-weight: 700px;
-    font-style: bold;
-    font-size: secondary;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-}
-
-.img {
-  width: 748px;
-  height: 360px;
-  padding-top: 24px;  
-  padding-left: 32px;
-  padding-right: 32px;
-} 
-.discount_form {
-    width: 516px;
-    height: 296px;
-    gap: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.text {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1;
-}
-
-.tel {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1; 
-}
-
-.email {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1;
-}
-
-.discount_btn {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1;
-    font-family: Monserrat;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: normal;
-    display: flex;
-    align-items: center;
-} 
-
-/* .discount_content {
-    width: 1360px;
-    height: 486px;
-    top: 1416px;
-    left: 40px;
-    border-radius: 6px;
-    padding-top: 32px;
-    padding-right: 32px;
-    padding-left: 32px;
-    gap: 24px;
-    background: linear-gradient(261.47deg, #0B710B 32.63%, #339933 98.96%),
-linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-}
-
-.h3 {
-    width: 1296px;
-    height: 70px;
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-    font-family: Monserrat;
-    font-weight: 700px;
-    font-style: bold;
-    font-size: secondary;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-}
-
-.img {
-  width: 748px;
-  height: 360px;
-  padding-top: 24px;  
-  padding-left: 32px;
-  padding-right: 32px;
-} 
-.discount_form {
-    width: 516px;
-    height: 296px;
-    gap: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.text {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1;
-}
-
-.tel {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1; 
-}
-
-.email {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1;
-}
-
-.discount_btn {
-    width: 516px;
-    height: 58px;
-    border: solid 1px;
-    border-radius: 6px;
-    gap: 16px;
-    background-color: #FFFFF1;
-    font-family: Monserrat;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: normal;
-    display: flex;
-    align-items: center;
-} */

@@ -71,17 +71,18 @@ const ProductPage = () => {
         </div>
         <div className={styles.divider}></div>
       </header>
-      <nav className={styles.breadcrumbs}>
-        <Link to="/" className={styles.breadcrumbLink}>
-          Main page
-        </Link>
-        <div className={styles.dividerBreadCrumbs}></div>
-        <span className={styles.breadcrumbActive}>Categories</span>
-        <div className={styles.dividerBreadCrumbs}></div>
-        <span className={styles.breadcrumbActive}>Tools and equipment</span>
-        <div className={styles.dividerBreadCrumbs}></div>
-        <span className={styles.breadcrumbActive}>{product.name}</span>
-      </nav>
+
+         <nav className={styles.breadcrumbs}>
+              <Link to="/" className={styles.breadcrumbLink}>
+                Main page
+              </Link>
+              <div className={styles.dividerBreadCrumbs}></div>
+              <Link to="categories" className={styles.breadcrumbLink}>Categories</Link>
+              <div className={styles.dividerBreadCrumbs}></div>
+              <Link to="tools and equipment" className={styles.breadcrumbActiveTools}>Tools and equipment</Link>
+               <div className={styles.dividerBreadCrumbs}></div>
+               <Link to="tools and equipment" className={styles.breadcrumbActive}>Secateurs</Link>
+            </nav>
 
       <div className={styles.productContent}>
         <div className={styles.productImages}>

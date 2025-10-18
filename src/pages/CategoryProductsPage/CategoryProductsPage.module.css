@@ -95,15 +95,14 @@
 .breadcrumbs {
     display: flex;
     align-items: center;
-    gap: 8px;
     margin: 40px;
     font-family: "Montserrat", sans-serif;
     background: #fffff1;   
 }
 
 .breadcrumbLink {
-   width: 142px;
-  height: 36px;
+  width: 100px;
+  height: 20px;
   border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 8px 16px;
@@ -124,14 +123,14 @@
 }
 
 .dividerBreadCrumbs {
-     width:16px;
+    width:16px;
     height: 1px;
     background-color: #dddddd;
 }
 
 .breadcrumbActive {
-   width: 142px;
-  height: 36px;
+  width: 100px;
+  height: 20px;
   border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 8px 16px;
@@ -144,34 +143,119 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
-  justify-content: center;
-   
-}
-.breadcrumbActive:hover {
-  color: #8B8B8B;  
+  justify-content: center; 
 }
 
-.productsSection {
-  width: 100%;
-  background-color: #fffff1;
-  padding-top: 40px;
-  padding: 80px;
-  margin: 0 auto;
-}
-.pageTitle{
-  width: 361px;
-  height: 70px;
-  margin-left: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
+.breadcrumbActiveTools {
+  width: 150px;
+  height: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background: none;
   color: #424436;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
   display: flex;
   align-items: center;
+  justify-content: center; 
+
 }
 
+.breadcrumbActiveTools:hover {
+  color: #8B8B8B;  
+}
+.productsSection {
+  padding: 0 40px;
+}
+.productHeader {
+  margin-bottom: 40px;
+}
 
+.pageTitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: #424436; 
+}
 
+.sidebar {
+display: flex;
+padding: 40px;
+
+  
+ 
+}
+
+.filterTitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+ 
+}
+
+.priceInputs {
+  /* display: flex;
+  gap: 16px; 
+  margin-bottom: 40px;  */
+}
+
+.priceInput {
+  /* padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 80px;
+  font-size: 14px; */
+}
+
+.checkboxGroup {
+  /* margin-bottom: 40px;  */
+}
+
+.checkboxLabel {
+  /* display: flex;
+  align-items: center;
+  gap: 5px; 
+  cursor: pointer;
+  font-size: 14px;
+  color: #333; */
+}
+
+.checkbox {
+  /* margin: 0; */
+}
+
+.sortSelect {
+  /* margin-top: 5px; 
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #fffff1;
+  font-size: 14px;
+  width: 100%;
+  max-width: 200px; */
+}
+
+.productsGrid {
+
+}
+
+.productLink {
+
+}
+
+.productCard {
+
+}
+
+.discountBadge {
+
+}
 
 
 
@@ -236,39 +320,36 @@
 
 
 .contactSection {
-  width: 100%;
-  background-color: #fffff1;
-  padding: 80px;
-  padding-left: 40px;
-  margin-bottom: 80px; 
+  padding: 0 40px;
+  margin-bottom: 32px
+}
+
+.contactHeader {
+  margin-bottom: 40px;
 }
 
 .contactTitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
+  font-style: Bold;
   font-size: 64px;
-  color: #424436;
-  line-height: 1.1;
-  letter-spacing: 0%;
-  margin: 40px ; 
+  color: #424436; 
 }
 
 .contactGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px; 
-  max-width: 1360px;
-  margin: 40px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 32px;
 }
 
 .contactItem {
-  background: #f2f6d3; 
-  border-radius: 12px;
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  color: #424436;
-  font-family: "Montserrat", sans-serif;  
+background: #f2f6d3; 
+border-radius: 12px;
+padding: 40px 32px;
+display: flex;
+flex-direction: column;
+color: #424436;
+font-family: "Montserrat", sans-serif;  
 font-weight: 600;
 font-style: SemiBold;
 font-size: 40px;
@@ -358,11 +439,7 @@ padding-bottom: 16px;
 }
 
 .mapSection {
-  width: 100%;
-    padding: 40px 20px;
-    margin: 40px;
-    background: #FFFFF1;
-    color: #FFFFF1;
+  padding: 0 40px;
 }
 
 .mapContainer {
@@ -409,3 +486,67 @@ padding-bottom: 16px;
     background: #92A134;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

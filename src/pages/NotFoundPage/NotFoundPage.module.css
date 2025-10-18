@@ -173,39 +173,36 @@
     box-shadow: 0 8px 20px rgba(146, 161, 52, 0.2);
 }
 .contactSection {
-  width: 100%;
-  background-color: #fffff1;
-  padding: 80px;
-  padding-left: 40px;
-  margin-bottom: 80px; 
+  padding: 0 40px;
+  margin-bottom: 32px
+}
+
+.contactHeader {
+  margin-bottom: 40px;
 }
 
 .contactTitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
+  font-style: Bold;
   font-size: 64px;
-  color: #424436;
-  line-height: 1.1;
-  letter-spacing: 0%;
-  margin: 40px ; 
+  color: #424436; 
 }
 
 .contactGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px; 
-  max-width: 1360px;
-  margin: 40px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 32px;
 }
 
 .contactItem {
-  background: #f2f6d3; 
-  border-radius: 12px;
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  color: #424436;
-  font-family: "Montserrat", sans-serif;  
+background: #f2f6d3; 
+border-radius: 12px;
+padding: 40px 32px;
+display: flex;
+flex-direction: column;
+color: #424436;
+font-family: "Montserrat", sans-serif;  
 font-weight: 600;
 font-style: SemiBold;
 font-size: 40px;
@@ -295,11 +292,7 @@ padding-bottom: 16px;
 }
 
 .mapSection {
-  width: 100%;
-    padding: 40px 20px;
-    margin: 40px;
-    background: #FFFFF1;
-    color: #FFFFF1;
+  padding: 0 40px;
 }
 
 .mapContainer {

@@ -109,15 +109,14 @@
 .breadcrumbs {
     display: flex;
     align-items: center;
-    gap: 8px;
     margin: 40px;
     font-family: "Montserrat", sans-serif;
     background: #fffff1;
 }
 
 .breadcrumbLink {
-  width: 142px;
-  height: 36px;
+  width: 100px;
+  height: 20px;
   border: 1px solid #DDDDDD;
   border-radius: 6px;
   padding: 8px 16px;
@@ -138,7 +137,7 @@
 }
 
 .dividerBreadCrumbs {
-     width:16px;
+    width:16px;
     height: 1px;
     background-color: #dddddd;
 }
@@ -148,8 +147,8 @@
 }
 
 .breadcrumbActive {
-   width: 142px;
-  height: 36px;
+   width: 100px;
+  height: 20px;
   border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 8px 16px;
@@ -357,99 +356,127 @@
     background: #7a8a2a;
 }
 
-
 .contactSection {
-    width: 100%;
-    background-color: #fffff1;
-    padding: 80px;
-    padding-left: 40px;
-    margin-bottom: 80px;
+  padding: 0 40px;
+  margin-bottom: 32px
+}
+
+.contactHeader {
+  margin-bottom: 40px;
 }
 
 .contactTitle {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    color: #424436;
-    line-height: 1.1;
-    margin: 40px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: #424436; 
 }
 
 .contactGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    max-width: 1360px;
-    margin: 40px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 32px;
 }
 
 .contactItem {
-    background: #f2f6d3;
-    border-radius: 12px;
-    padding: 40px 32px;
-    display: flex;
-    flex-direction: column;
+background: #f2f6d3; 
+border-radius: 12px;
+padding: 40px 32px;
+display: flex;
+flex-direction: column;
+color: #424436;
+font-family: "Montserrat", sans-serif;  
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+padding-bottom: 16px;
 }
 
 .contactSubtitle {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #8B8B8B;
-    line-height: 1.3;
-    margin: 0 0 16px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8B8B8B;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0;
 }
 
-.contactText {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    color: #424436;
-    line-height: 1.1;
-    margin: 0;
+
+.contactContent {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 0 0 32px 0; 
+} 
+
+.contactContent:last-child {
+  margin-bottom: 0;
 }
 
-.hours {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    color: #424436;
-    line-height: 1.1;
-    margin: 0;
+
+.addressText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  padding-top: 16px;
+}
+
+
+.contactDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #424436;
+  margin: 32px 0; 
+  opacity: 0.6;
+}
+
+.workingHours {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8B8B8B;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0;
+ 
+}
+
+.hoursText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  margin: 0;
 }
 
 .socialIcons {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
 }
 
 .socialLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 43px;
-    height: 44px;
-    background-color: #424436;
-    color: #f2f6d3;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 44px;
+  background-color: #424436 ; 
+  color: #f2f6d3;
 }
-
-.socialLink:hover {
-    background-color: #92a134;
-}
-
 
 .mapSection {
-    width: 100%;
-    padding: 40px 20px;
-    margin: 40px;
-    background: #FFFFF1;
+  padding: 0 40px;
 }
 
 .mapContainer {
@@ -459,8 +486,6 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease;
-    max-width: 1360px;
-    margin: 0 auto;
 }
 
 .mapContainer:hover {

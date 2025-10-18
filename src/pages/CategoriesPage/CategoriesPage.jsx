@@ -96,8 +96,9 @@ const CategoriesPage = () => {
             </section>
 
             <section className={styles.contactSection}>
+                <div className={styles.contactHeader}>
                 <h2 className={styles.contactTitle}>Contact</h2>
-                             
+                  </div>           
                 <div className={styles.contactGrid}>
                     <div className={styles.contactItem}>
                         <h3 className={styles.contactSubtitle}>Phone</h3>
