@@ -169,101 +169,218 @@
   color: #8B8B8B;  
 }
 .productsSection {
-  padding: 0 40px;
+   padding: 0 40px; 
+  margin-bottom: 80px;
 }
+
 .productHeader {
   margin-bottom: 40px;
 }
 
 .pageTitle {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 64px;
-  color: #424436; 
+  color: #424436;
+   margin: 0 0 40px 0; 
+
+}
+ .filtersContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.sidebar {
-display: flex;
-padding: 40px;
-
-  
- 
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.filterTitle {
-  font-family: Montserrat, sans-serif;
+.filterLabel {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-style: SemiBold;
   font-size: 20px;
- 
+  color: #424436;
+  white-space: nowrap;
+  gap: 5px;
 }
 
 .priceInputs {
-  /* display: flex;
-  gap: 16px; 
-  margin-bottom: 40px;  */
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .priceInput {
-  /* padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
   width: 80px;
-  font-size: 14px; */
+  height: 36px;
+  border: 1px solid #DDDDDD; 
+  border-radius: 6px;
+  background-color: #FFFFFF; 
+  color: #8B8B8B; 
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 0 12px;
 }
 
-.checkboxGroup {
-  /* margin-bottom: 40px;  */
-}
+ .priceInput::placeholder {
+  color: #8B8B8B;
+} 
 
 .checkboxLabel {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  gap: 5px; 
+  gap: 16px;
   cursor: pointer;
-  font-size: 14px;
-  color: #333; */
+  margin-left: 40px;
 }
 
 .checkbox {
-  /* margin: 0; */
+  width: 36px;
+  height: 36px;
+  border: 1px solid #DDDDDD; 
+  border-radius: 6px;
+  background-color: #FFFFFF; 
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #92a134;
+}
+
+.checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkboxText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  color: #424436;
+  white-space: nowrap;
+  gap: 5px;
 }
 
 .sortSelect {
-  /* margin-top: 5px; 
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  color: #fffff1;
+  width: 150px;
+  height: 36px;
+  border: 1px solid #DDDDDD; 
+  border-radius: 6px;
+  background-color: #FFFFFF; 
+  color: #8B8B8B; 
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  width: 100%;
-  max-width: 200px; */
+  padding: 0 12px; 
 }
 
 .productsGrid {
-
-}
-
-.productLink {
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 .productCard {
-
+  position: relative;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  overflow: hidden;
+  /* background: white; */
+  
+  
+  padding: 16px;
+  position: relative;  
+}
+ .productImageDivider {
+  width: calc(100% + 32px);
+  height: 1px;
+  background-color: #dddddd;
+  margin: 12px -16px;
+  align-self: center;
 }
 
 .discountBadge {
-
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #F26D22;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.addToCartButton {
+  width: calc(100% - 32px); 
+  margin: 0 16px 12px 16px;  
+  padding: 12px;
+  background: #92a134;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+ .addToCartButton:hover {
+  background: #7a8a2a;
+}
+
+.productName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #424436;
+  margin: 0 0 12px 0;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currentPrice {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #424436;
+} 
+
+ .originalPrice {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}  
 
 
 
-
-
-
-
+ 
 
 
 
