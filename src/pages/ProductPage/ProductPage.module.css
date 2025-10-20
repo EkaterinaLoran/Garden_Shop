@@ -20,26 +20,26 @@
   padding-bottom: 30px;
   padding-left: 40px;
   padding-top: 30px;
-  gap: 350px; 
+  gap: 350px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  margin: 0 auto; 
+  margin: 0 auto;
   gap: 32px;
 }
- 
+
 .navItem {
   color: #424436;
   text-decoration: none;
-  font-family: 'Monserrat', sans-serif;
+  font-family: "Monserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 130%;  
+  line-height: 130%;
   letter-spacing: 0px;
 }
 
@@ -58,21 +58,19 @@
   align-items: center;
   justify-content: center;
   margin-right: 40px;
- 
 }
 
 .cartIcon {
   width: 24px;
   height: 24px;
   display: block;
-
 }
 
 .cartCount {
   position: absolute;
   top: 0;
   right: 0;
-  background: #92A134;
+  background: #92a134;
   color: white;
   border-radius: 50%;
   width: 20px;
@@ -82,9 +80,8 @@
   justify-content: center;
   font-size: 12px;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 .divider {
   width: 100%;
@@ -92,11 +89,11 @@
   background-color: #dddddd;
 }
 .breadcrumbs {
-    display: flex;
-    align-items: center;
-    margin: 40px;
-    font-family: "Montserrat", sans-serif;
-    background: #fffff1;   
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  font-family: "Montserrat", sans-serif;
+  background: #fffff1;
 }
 
 .breadcrumbLink {
@@ -106,7 +103,7 @@
   border-radius: 6px;
   padding: 8px 16px;
   background: none;
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
@@ -118,13 +115,13 @@
 }
 
 .breadcrumbLink:hover {
-    color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 .dividerBreadCrumbs {
-    width:16px;
-    height: 1px;
-    background-color: #dddddd;
+  width: 16px;
+  height: 1px;
+  background-color: #dddddd;
 }
 
 .breadcrumbActiveTools {
@@ -134,7 +131,7 @@
   border-radius: 6px;
   padding: 8px 16px;
   background: none;
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
@@ -145,7 +142,7 @@
   justify-content: center;
 }
 .breadcrumbActiveTools:hover {
-    color: #8B8B8B;
+  color: #8b8b8b;
 }
 .breadcrumbActive {
   width: 100px;
@@ -162,7 +159,7 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .breadcrumbActiveSecateurs {
@@ -180,21 +177,20 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
-  justify-content: center; 
-
+  justify-content: center;
 }
 .breadcrumbActive:hover {
-  color: #8B8B8B;  
+  color: #8b8b8b;
 }
 
-.productsSection {
+/* .productsSection {
   width: 100%;
   background-color: #fffff1;
   padding-top: 40px;
   padding: 80px;
   margin: 0 auto;
 }
-.pageTitle{
+.pageTitle {
   width: 361px;
   height: 70px;
   margin-left: 40px;
@@ -204,168 +200,195 @@
   color: #424436;
   display: flex;
   align-items: center;
-}
-
-
-
+} */
 
 .productContent {
-    display: flex;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  padding: 40px;
+  display: flex;
+  gap: 32px;
 }
 
 .productImages {
-    flex: 1;
+  flex: 1;
 }
 
 .mainImage {
-    width: 100%;
-    max-width: 500px;
-    height: 400px;
-    object-fit: contain;
-    border-radius: 12px;
-    background: #f8f9fa;
+  width: 780px;
+  height: 572px; 
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  
 }
 
-.productInfo {
-    flex: 1;
-    max-width: 500px;
-}
+ .productInfo {
+  flex: 1;
+  max-width: 548px;
+  padding-top: 0;
+  margin-top: 0;
+  
+ 
+} 
 
 .productTitle {
-    font-size: 32px;
-    font-weight: bold;
-    color: #2d3748;
-    margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  color: #424436;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .priceSection {
-    margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .priceContainer {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  
 }
 
 .currentPrice {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2d3748;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: #424436;
+  gap: 32px;
 }
 
 .originalPrice {
-    font-size: 20px;
-    color: #a0aec0;
-    text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 40px;
+  text-decoration: line-through;
+  color: #8b8b8b;
+  
 }
 
 .discountBadge {
-    background: #F26D22;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
+background: #F26D22;
+color: #FFFFFF;
+ /* top: 4px;
+right: 8px;
+bottom: 4px;
+left: 8px;  */
+border-radius: 6px;
+font-family: "Montserrat",sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 20px;
 }
 
 .quantitySection {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .quantityControls {
-    display: flex;
-    align-items: center;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
-    overflow: hidden;
+  width: 200px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #DDDDDD;
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .quantityButton {
-    width: 40px;
-    height: 40px;
-    background: #f7fafc;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  width: 58px;
+  height: 58px;
+  background: #ffffff;
+  color: #8B8B8B;
+  border: 1px solid #DDDDDD;
+  font-size: 18px;
+  /* cursor: pointer;
+  transition: background-color 0.2s; */
 }
 
-.quantityButton:hover {
-    background: #edf2f7;
-}
+ .quantityButton:hover {
+  background: #FFFFFF;
+} 
 
 .quantity {
-    width: 60px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 0 10px;
+ width: 60px;
+  text-align: center;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: #ffffff;
+  color: #424436;
+  padding: 0 10px; 
 }
 
 .addToCartButton {
-    background: #92A134;
-    color: white;
-    border: none;
-    padding: 12px 32px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    min-width: 140px;
+  width: 316px;
+  height: 58px;
+gap: 32px;
+border-radius: 6px;
+/* padding-top: 16px;
+padding-right: 32px;
+padding-bottom: 16px;
+padding-left: 32px; */
+background: #92a134;
+color: #FFFFFF;
+font-family: "Montserrat",sans-serif;
+font-weight: 600;
+font-size: 20px;
+text-align: center;
+vertical-align: middle;
 }
 
-.addToCartButton:hover {
-    background: #3182ce;
-}
+ .addToCartButton:hover {
+  background: #92a134;
+} 
 
 .descriptionSection {
-    border-top: 2px solid #e2e8f0;
-    padding-top: 30px;
+  gap: 32px;
 }
 
 .descriptionTitle {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 16px;
+font-family: "Montserrat",sans-serif;
+font-weight: 600;
+font-size: 20px;
+color: #424436;
+margin-bottom: 16px;
 }
 
 .descriptionText {
-    color: #4a5568;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    font-size: 15px;
+  font-family: "Montserrat",sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+color: #424436;
+margin-bottom: 16px;
 }
 
 .readMoreButton {
-    background: none;
+   background: none;
     border: none;
-    color: #4299e1;
-    font-size: 14px;
-    font-weight: 600;
+    color: #424436;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
     text-decoration: underline;
     padding: 0;
 }
 
-.readMoreButton:hover {
-    color: #3182ce;
-}
+ .readMoreButton:hover {
+  color: #424436;
+} 
 
 .contactSection {
   padding: 0 40px;
-  margin-bottom: 32px
+  margin-bottom: 32px;
 }
 
 .contactHeader {
@@ -377,39 +400,38 @@
   font-weight: 700;
   font-style: Bold;
   font-size: 64px;
-  color: #424436; 
+  color: #424436;
 }
 
 .contactGrid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 }
 
 .contactItem {
-background: #f2f6d3; 
-border-radius: 12px;
-padding: 40px 32px;
-display: flex;
-flex-direction: column;
-color: #424436;
-font-family: "Montserrat", sans-serif;  
-font-weight: 600;
-font-style: SemiBold;
-font-size: 40px;
-padding-bottom: 16px;
+  background: #f2f6d3;
+  border-radius: 12px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  color: #424436;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 40px;
+  padding-bottom: 16px;
 }
 
 .contactSubtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   line-height: 1.3;
   letter-spacing: 0%;
   margin: 0 0 16px 0;
 }
-
 
 .contactContent {
   font-family: "Montserrat", sans-serif;
@@ -418,13 +440,12 @@ padding-bottom: 16px;
   color: #424436;
   line-height: 1.1;
   letter-spacing: 0%;
-  margin: 0 0 32px 0; 
-} 
+  margin: 0 0 32px 0;
+}
 
 .contactContent:last-child {
   margin-bottom: 0;
 }
-
 
 .addressText {
   font-family: "Montserrat", sans-serif;
@@ -436,12 +457,11 @@ padding-bottom: 16px;
   padding-top: 16px;
 }
 
-
 .contactDivider {
   width: 100%;
   height: 1px;
   background-color: #424436;
-  margin: 32px 0; 
+  margin: 32px 0;
   opacity: 0.6;
 }
 
@@ -449,11 +469,10 @@ padding-bottom: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   line-height: 1.3;
   letter-spacing: 0%;
   margin: 0 0 16px 0;
- 
 }
 
 .hoursText {
@@ -478,7 +497,7 @@ padding-bottom: 16px;
   justify-content: center;
   width: 43px;
   height: 44px;
-  background-color: #424436 ; 
+  background-color: #424436;
   color: #f2f6d3;
 }
 
@@ -487,77 +506,46 @@ padding-bottom: 16px;
 }
 
 .mapContainer {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .mapContainer:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .mapImage {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
 }
 
 .mapOverlay {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .mapButton {
-    background: rgba(255, 255, 255, 0.95);
-    border: 2px solid #92A134;
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #92A134;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #92a134;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #92a134;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .mapButton:hover {
-    background: #92A134;
-    color: white;
+  background: #92a134;
+  color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

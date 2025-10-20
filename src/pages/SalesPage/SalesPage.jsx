@@ -135,26 +135,47 @@ const SalesPage = () => {
                 <span className={styles.breadcrumbActive}>All sales</span>
             </nav>
 
-            <div className={styles.mainContent}>
-                <section className={styles.productsSection}>
-                    <div className={styles.sectionHeader}>
-                        <h1 className={styles.pageTitle}>All sales</h1>
-                        <div className={styles.sortContainer}>
-                            <span className={styles.sortLabel}>Sorted by:</span>
-                            <select 
-                                value={sortBy} 
-                                onChange={(e) => setSortBy(e.target.value)}
-                                className={styles.sortSelect}
-                            >
-                                <option value="default">Default</option>
-                                <option value="discount-high">Discount: High to Low</option>
-                                <option value="discount-low">Discount: Low to High</option>
-                                <option value="price-low">Price: Low to High</option>
-                                <option value="price-high">Price: High to Low</option>
-                                <option value="name">Name A-Z</option>
-                            </select>
-                        </div>
+            <section className={styles.productsSection}>
+              <div className={styles.productHeader}>
+                <h1 className={styles.pageTitle}>Discounted items</h1>
+                
+                <div className={styles.filtersContainer}>
+                  <div className={styles.filterGroup}>
+                    <span className={styles.filterLabel}>Price</span>
+                    <div className={styles.priceInputs}>
+                      <input 
+                        type="number" 
+                        placeholder="from" 
+                        className={styles.priceInput}
+                      />
+                      <input 
+                        type="number" 
+                        placeholder="to" 
+                        className={styles.priceInput}
+                      />
                     </div>
+                  </div>
+            
+                
+            
+                  <div className={styles.filterGroup}>
+                    <span className={styles.filterLabel}>Sorted</span>
+                    <select 
+                                                    value={sortBy} 
+                                                    onChange={(e) => setSortBy(e.target.value)}
+                                                    className={styles.sortSelect}
+                                                >
+                                                    <option value="default">by default</option>
+                                                    <option value="discount-high">discount: High to Low</option>
+                                                    <option value="discount-low">discount: Low to High</option>
+                                                    <option value="price-low">price: Low to High</option>
+                                                    <option value="price-high">price: High to Low</option>
+                                                    <option value="name">name A-Z</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            
 
                     <div className={styles.productsGrid}>
                         {sortedProducts.map((product) => (
@@ -175,7 +196,7 @@ const SalesPage = () => {
                                         <span className={styles.currentPrice}>${product.price}</span>
                                         <span className={styles.originalPrice}>${product.originalPrice}</span>
                                     </div>
-                                    <button 
+                                    {/* <button 
                                         className={styles.addToCartButton}
                                         onClick={(e) => {
                                             e.preventDefault();
@@ -184,13 +205,13 @@ const SalesPage = () => {
                                         }}
                                     >
                                         Add to cart
-                                    </button>
+      </button> */}
                                 </div>
                             </Link>
                         ))}
                     </div>
                 </section>
-            </div>
+           
 
             <section className={styles.contactSection}>
                 <h2 className={styles.contactTitle}>Contact</h2>

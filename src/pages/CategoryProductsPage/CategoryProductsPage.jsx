@@ -182,8 +182,17 @@ const CategoryProductsPage = () => {
 
       <div className={styles.filterGroup}>
         <span className={styles.filterLabel}>Sorted</span>
-        <select className={styles.sortSelect}>
-          <option>by default</option>
+        <select 
+                                        value={sortBy} 
+                                        onChange={(e) => setSortBy(e.target.value)}
+                                        className={styles.sortSelect}
+                                    >
+                                        <option value="default">by default</option>
+                                        <option value="discount-high">discount: High to Low</option>
+                                        <option value="discount-low">discount: Low to High</option>
+                                        <option value="price-low">price: Low to High</option>
+                                        <option value="price-high">price: High to Low</option>
+                                        <option value="name">name A-Z</option>
         </select>
       </div>
     </div>

@@ -150,57 +150,57 @@ const AllProductsPage = () => {
       </nav>
 
       <div className={styles.mainContent}>
-        <aside className={styles.sidebar}>
-          <h3 className={styles.filterTitle}>Price</h3>
-          <div className={styles.priceInputs}>
-            <input
-              type="number"
-              placeholder="From"
-              value={priceRange.min}
-              onChange={(e) =>
-                setPriceRange({ ...priceRange, min: e.target.value })
-              }
-              className={styles.priceInput}
-            />
-            <input
-              type="number"
-              placeholder="To"
-              value={priceRange.max}
-              onChange={(e) =>
-                setPriceRange({ ...priceRange, max: e.target.value })
-              }
-              className={styles.priceInput}
-            />
-          </div>
+  <section className={styles.productsSection}>
+    <h1 className={styles.pageTitle}>All products</h1>
+    
+    <aside className={styles.sidebar}>
+      <h3 className={styles.filterTitle}>Price</h3>
+      <div className={styles.priceInputs}>
+        <input
+          type="number"
+          placeholder="From"
+          value={priceRange.min}
+          onChange={(e) =>
+            setPriceRange({ ...priceRange, min: e.target.value })
+          }
+          className={styles.priceInput}
+        />
+        <input
+          type="number"
+          placeholder="To"
+          value={priceRange.max}
+          onChange={(e) =>
+            setPriceRange({ ...priceRange, max: e.target.value })
+          }
+          className={styles.priceInput}
+        />
+      </div>
 
-          <div className={styles.checkboxGroup}>
-            <label className={styles.checkboxLabel}>
-              <input
-                type="checkbox"
-                checked={showDiscounted}
-                onChange={(e) => setShowDiscounted(e.target.checked)}
-                className={styles.checkbox}
-              />
-              Discounted items
-            </label>
-          </div>
+      <div className={styles.checkboxGroup}>
+        <label className={styles.checkboxLabel}>
+          <input
+            type="checkbox"
+            checked={showDiscounted}
+            onChange={(e) => setShowDiscounted(e.target.checked)}
+            className={styles.checkbox}
+          />
+          Discounted items
+        </label>
+      </div>
 
-          <h3 className={styles.filterTitle}>Sorted by</h3>
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className={styles.sortSelect}
-          >
-            <option value="default">Default</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="name">Name A-Z</option>
-            <option value="discount">Discount</option>
-          </select>
-        </aside>
-
-        <section className={styles.productsSection}>
-          <h1 className={styles.pageTitle}>Tools and equipment</h1>
+      <h3 className={styles.filterTitle}>Sorted by</h3>
+      <select
+        value={sortBy}
+        onChange={(e) => setSortBy(e.target.value)}
+        className={styles.sortSelect}
+      >
+        <option value="default">Default</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name">Name A-Z</option>
+        <option value="discount">Discount</option>
+      </select>
+    </aside>
 
           <div className={styles.productsGrid}>
             {allProducts.map((product) => (
@@ -232,12 +232,12 @@ const AllProductsPage = () => {
                     </span>
                   )}
                 </div>
-                <button
+                {/* <button
                   className={styles.addToCartButton}
                   onClick={() => handleAddToCart(product.id)}
                 >
                   Add to cart
-                </button>
+                </button> */}
               </div>
             ))}
           </div>
