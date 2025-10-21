@@ -285,11 +285,11 @@
   font-size: 14px;
   padding: 0 12px; 
 }
-
 .productsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 32px;
+  margin-top: 40px;
 }
 
 .productCard {
@@ -297,90 +297,65 @@
   border: 1px solid #dddddd;
   border-radius: 6px;
   overflow: hidden;
-  /* background: white; */
-  
-  
-  padding: 16px;
-  position: relative;  
-}
- .productImageDivider {
-  width: calc(100% + 32px);
-  height: 1px;
-  background-color: #dddddd;
-  margin: 12px -16px;
-  align-self: center;
+  background: #ffffff;
 }
 
 .discountBadge {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #F26D22;
+  top: 16px;
+  right: 16px;
+  width: 67px;
+  height: 34px;
+  background-color: #F26D22;
   color: white;
-  padding: 4px 8px;
   border-radius: 4px;
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 16px;
+  z-index: 2;
 }
 
 .productImage {
   width: 100%;
-  height: 200px;
+  height: 284px;
   object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 12px;
-}
-
-.addToCartButton {
-  width: calc(100% - 32px); 
-  margin: 0 16px 12px 16px;  
-  padding: 12px;
-  background: #92a134;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-}
- .addToCartButton:hover {
-  background: #7a8a2a;
+  display: block;
 }
 
 .productName {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 20px;
   color: #424436;
-  margin: 0 0 12px 0;
+  margin: 0 0 16px 0;
+  padding: 20px 20px 0 20px;
 }
 
 .priceContainer {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
+  padding: 0 20px 20px 20px;
 }
 
 .currentPrice {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 40px;
   color: #424436;
-} 
+}
 
- .originalPrice {
+.originalPrice {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #999;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
   text-decoration: line-through;
-}  
+}
 
-
-
- 
 
 
 

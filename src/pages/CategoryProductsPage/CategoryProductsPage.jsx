@@ -183,8 +183,8 @@ const CategoryProductsPage = () => {
       <div className={styles.filterGroup}>
         <span className={styles.filterLabel}>Sorted</span>
         <select 
-                                        value={sortBy} 
-                                        onChange={(e) => setSortBy(e.target.value)}
+      value={sortBy} 
+          onChange={(e) => setSortBy(e.target.value)}
                                         className={styles.sortSelect}
                                     >
                                         <option value="default">by default</option>

@@ -143,7 +143,7 @@
 .productsSection {
 padding: 0 40px;
 }
-.sectionHeader { 
+.productHeader { 
   margin-bottom: 40px;
 }
 
@@ -212,40 +212,76 @@ padding: 0 40px;
 .productsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-.productLink {
-
+  gap: 32px;
+  margin-top: 40px;
 }
 
 .productCard {
-   
+  position: relative;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
 }
 
 .discountBadge {
-
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 67px;
+  height: 34px;
+  background-color: #F26D22;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 2;
 }
 
 .productImage {
-
+  width: 100%;
+  height: 284px;
+  object-fit: cover;
+  display: block;
 }
 
 .productName {
-
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #424436;
+  margin: 0 0 16px 0;
+  padding: 20px 20px 0 20px;
 }
 
 .priceContainer {
-
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px 20px 20px;
 }
 
 .currentPrice {
-
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #424436;
 }
 
 .originalPrice {
-
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
+  text-decoration: line-through;
 }
+
+
+
 
 .addToCartButton {
 

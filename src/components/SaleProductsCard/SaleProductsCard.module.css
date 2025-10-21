@@ -64,7 +64,7 @@
 .discountBadge {
   position: absolute;
   top: 16px;
-  left: 16px;
+  right: 16px;
   width: 67px;
   height: 34px;
   background-color: #F26D22;
@@ -87,7 +87,7 @@
 
 .productInfo {
   padding: 20px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .productName {
