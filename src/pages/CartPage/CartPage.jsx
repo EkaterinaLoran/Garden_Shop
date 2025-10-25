@@ -121,16 +121,23 @@ const CartPage = () => {
         <div className={styles.divider}></div>
       </header>
 
-      <section className={styles.CartSection}>
-        <div className={styles.CartHeader}>
-          <h2 className={styles.title}>Shopping cart</h2>
+      <section className={styles.cartSection}>
+        <div className={styles.cartHeader}>
+          <h2 className={styles.cartTitle}>Shopping cart</h2>
         </div>
         <div className={styles.divider}></div>
-        <button className={styles.allSalesBtn}>Back to the store</button>
+        <button className={styles.storeBtn}>Back to the store</button>
 
         <div className={styles.cartItems}>
           {cartItems.map((item) => (
             <div key={item.id} className={styles.cartItem}>
+              <div className={styles.itemContent}>
+        <img 
+          src={item.image} 
+          alt={item.name}
+          className={styles.itemImage}
+        />
+        <div className={styles.itemDetails}>
               <div className={styles.itemHeader}>
                 <h3 className={styles.itemTitle}>{item.name}</h3>
               </div>
@@ -160,6 +167,8 @@ const CartPage = () => {
                     </span>
                   )}
                 </div>
+              </div>
+              </div>
               </div>
               <div className={styles.divider}></div>
             </div>
