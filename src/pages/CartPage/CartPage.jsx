@@ -54,6 +54,10 @@ const CartPage = () => {
     const { name, value } = e.target;
     setOrderForm((prev) => ({ ...prev, [name]: value }));
   };
+  const removeFromCart = (productId) => {
+  console.log(`Remove product ${productId} from cart`);
+};
+
 
   const handleOrderSubmit = (e) => {
     e.preventDefault();
@@ -73,6 +77,7 @@ const CartPage = () => {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+  
 
   const handleMapClick = () => {
     window.open(
@@ -80,6 +85,7 @@ const CartPage = () => {
       "_blank"
     );
   };
+
 
   return (
     <div className={styles.container}>
@@ -125,12 +131,19 @@ const CartPage = () => {
         <div className={styles.cartHeader}>
           <h2 className={styles.cartTitle}>Shopping cart</h2>
         </div>
-        <div className={styles.divider}></div>
-        <button className={styles.storeBtn}>Back to the store</button>
+          {/* <div className={styles.divider}></div> 
+         <button className={styles.storeBtn}>Back to the store</button>  */}
 
         <div className={styles.cartItems}>
           {cartItems.map((item) => (
-            <div key={item.id} className={styles.cartItem}>
+            <div key={item.id} className={styles.cartItem}
+            >
+               <button 
+    className={styles.deleteBtn}
+    onClick={() => removeFromCart(item.id)}
+  >
+    ×
+  </button>
               <div className={styles.itemContent}>
         <img 
           src={item.image} 
@@ -173,15 +186,15 @@ const CartPage = () => {
               <div className={styles.divider}></div>
             </div>
           ))}
-        </div>
+        </div> 
 
         <div className={styles.orderDetails}>
           <h3 className={styles.orderTitle}>Order details</h3>
           <div className={styles.orderSummary}>
-            <div className={styles.orderRow}>
-              <span>{totalItems} items</span>
-              <span>${totalPrice.toFixed(2)}</span>
-            </div>
+            { <div className={styles.orderRow}>
+              <span>3 items</span>
+              {/* <span>${totalPrice.toFixed(2)}</span> */}
+            </div>}
             <div className={styles.orderTotal}>
               <span>Total</span>
               <span className={styles.totalPrice}>
